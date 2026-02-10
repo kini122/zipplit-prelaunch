@@ -14,6 +14,11 @@ export default function Index() {
     }
   };
 
+  const scrollToWhatWeDo = () => {
+    const element = document.getElementById("what-we-do");
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div
       className="w-full overflow-hidden bg-white"
