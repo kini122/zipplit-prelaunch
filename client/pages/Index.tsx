@@ -49,19 +49,28 @@ export default function Index() {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-            Fresh. Healthy. Delivered.
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 animate-slide-up" style={{ animationDelay: "0.1s", fontFamily: "sans-serif" }}>
+            Fresh. Healthy. Effortless.
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-lime-100 mb-4 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            100% Preservative-Free Meals in Kochi
+            Preservative-Free Meals in Kochi
           </p>
 
           {/* Launching Soon Text */}
           <p className="text-3xl sm:text-5xl lg:text-6xl font-bold text-lime-300 animate-pulse-subtle" style={{ animationDelay: "0.3s" }}>
             Launching Soon
           </p>
+
+          {/* Know More Arrow */}
+          <button
+            onClick={scrollToWhatWeDo}
+            className="mt-12 mx-auto block animate-bounce"
+            aria-label="Scroll to What We Do"
+          >
+            <ChevronDown className="w-8 h-8 text-white" />
+          </button>
         </div>
       </section>
 
