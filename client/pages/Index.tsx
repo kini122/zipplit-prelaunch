@@ -45,7 +45,7 @@ export default function Index() {
               alt="Zipplit Logo"
               className="w-32 h-32 sm:w-40 sm:h-40 mx-auto object-contain"
             />
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mt-4">Zipplit</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mt-4" style={{ fontFamily: "sans-serif" }}>Zipplit</h2>
           </div>
 
           {/* Main Headline */}
