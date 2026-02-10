@@ -213,7 +213,7 @@ export default function Index() {
                 />
                 <span className="text-lg font-bold">Zipplit</span>
               </div>
-              <p className="text-teal-200 text-sm">Fresh. Healthy. Delivered.</p>
+              <p className="text-teal-200 text-sm">Fresh. Healthy. Effortless.</p>
             </div>
 
             {/* Newsletter Signup */}
