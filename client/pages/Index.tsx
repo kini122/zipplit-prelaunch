@@ -163,7 +163,7 @@ export default function Index() {
           </p>
 
           <div className="backdrop-blur-sm rounded-lg p-8 mb-8 animate-slide-up" style={{ animationDelay: "0.2s", backgroundColor: "rgba(10, 72, 73, 0.89)" }}>
-            <h3 className="text-white text-xl font-bold mb-6">Open Roles</h3>
+            <h3 className="text-white text-xl font-bold mb-6" style={{ fontFamily: "sans-serif" }}>Open Roles</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
               {[
                 { role: "Business Development", Icon: TrendingUp },
