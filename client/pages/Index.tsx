@@ -155,11 +155,11 @@ export default function Index() {
         }}
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2 animate-fade-in" style={{ fontFamily: "sans-serif" }}>
             Grow With Us
           </h2>
           <p className="text-lime-100 text-lg mb-8 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-            Join the Fresh Revolution
+            Join The Team
           </p>
 
           <div className="backdrop-blur-sm rounded-lg p-8 mb-8 animate-slide-up" style={{ animationDelay: "0.2s", backgroundColor: "rgba(10, 72, 73, 0.89)" }}>
