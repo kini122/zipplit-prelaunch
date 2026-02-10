@@ -213,7 +213,7 @@ export default function Index() {
 
             {/* Newsletter Signup */}
             <div>
-              <h4 className="font-bold text-lime-400 mb-4">Stay Updated</h4>
+              <h4 className="font-bold text-lime-400 mb-4" style={{ fontFamily: "sans-serif" }}>Stay Updated</h4>
               <form onSubmit={handleSignup} className="flex flex-col gap-2">
                 <input
                   type="email"
