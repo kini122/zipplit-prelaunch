@@ -15,7 +15,15 @@ export default function Index() {
   };
 
   return (
-    <div className="w-full overflow-hidden bg-white">
+    <div
+      className="w-full overflow-hidden bg-white"
+      style={{
+        backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2Fa60b8421277f4b9f9027148a9bdfaa03)",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover"
+      }}
+    >
       {/* Hero Section */}
       <section className="relative min-h-screen bg-gradient-to-br from-teal-500 via-teal-600 to-teal-700 pt-20 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
         {/* Animated background pattern */}
