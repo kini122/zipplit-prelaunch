@@ -103,33 +103,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Why Zipplit Section */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-12 animate-fade-in">
-            Why Zipplit
-          </h2>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
-            {[
-              { icon: "🚫", label: "No Preservatives" },
-              { icon: "📦", label: "Food-Grade Packaging" },
-              { icon: "🍃", label: "Fresh Daily" },
-              { icon: "⚡", label: "Fast Delivery" }
-            ].map((item, idx) => (
-              <div 
-                key={idx}
-                className="flex flex-col items-center text-center p-6 rounded-lg bg-white hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-fade-in"
-                style={{ animationDelay: `${idx * 0.1}s` }}
-              >
-                <div className="text-4xl sm:text-5xl mb-3">{item.icon}</div>
-                <p className="font-bold text-teal-700 text-sm sm:text-base">{item.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Who It's For Section */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
