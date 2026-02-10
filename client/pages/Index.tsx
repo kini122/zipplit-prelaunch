@@ -75,12 +75,12 @@ export default function Index() {
       </section>
 
       {/* What We Do Section */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+      <section id="what-we-do" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-12 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-12 animate-fade-in" style={{ fontFamily: "sans-serif" }}>
             What We Do
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Card 1 */}
             <div className="group p-8 bg-white border-2 border-teal-100 rounded-lg hover:border-lime-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-slide-up" style={{ animationDelay: "0.1s" }}>
@@ -89,7 +89,7 @@ export default function Index() {
                   <Calendar className="w-8 h-8 text-teal-700 group-hover:text-white transition-colors duration-300" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-teal-700 text-center mb-2">Periodic Plans</h3>
+              <h3 className="text-xl font-bold text-teal-700 text-center mb-2" style={{ fontFamily: "sans-serif" }}>Subscription</h3>
               <p className="text-gray-600 text-center text-sm">Choose your preferred delivery schedule and meal options</p>
             </div>
 
@@ -100,7 +100,7 @@ export default function Index() {
                   <Zap className="w-8 h-8 text-teal-700 group-hover:text-white transition-colors duration-300" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-teal-700 text-center mb-2">Quick Delivery</h3>
+              <h3 className="text-xl font-bold text-teal-700 text-center mb-2" style={{ fontFamily: "sans-serif" }}>Effortless</h3>
               <p className="text-gray-600 text-center text-sm">Fresh meals delivered quickly to your doorstep</p>
             </div>
 
@@ -111,7 +111,7 @@ export default function Index() {
                   <Leaf className="w-8 h-8 text-teal-700 group-hover:text-white transition-colors duration-300" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-teal-700 text-center mb-2">Pure Food</h3>
+              <h3 className="text-xl font-bold text-teal-700 text-center mb-2" style={{ fontFamily: "sans-serif" }}>Fresh and Healthy</h3>
               <p className="text-gray-600 text-center text-sm">100% preservative-free, made with fresh ingredients</p>
             </div>
           </div>
