@@ -41,9 +41,9 @@ export default function Index() {
           {/* Logo */}
           <div className="mb-8 animate-fade-in">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F5d9e4e2414a6480bbade330f0c7cbe3d?format=webp&width=800&height=1200"
+              src="https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2Fa9e80778c13f44178a2402dbf635ec79?format=webp&width=800&height=1200"
               alt="Zipplit Logo"
-              className="w-32 h-32 sm:w-40 sm:h-40 mx-auto object-contain"
+              className="w-40 h-40 sm:w-48 sm:h-48 mx-auto object-cover rounded-lg"
             />
             <h2 className="text-3xl sm:text-4xl font-bold text-white mt-4" style={{ fontFamily: "sans-serif" }}>Zipplit</h2>
           </div>
