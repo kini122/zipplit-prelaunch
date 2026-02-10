@@ -119,28 +119,25 @@ export default function Index() {
       </section>
 
       {/* Who It's For Section */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-12 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-12 animate-fade-in" style={{ fontFamily: "sans-serif" }}>
             Who It's For
           </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { title: "Working Professionals", description: "Skip the lunch rush. Nutritious meals delivered to your office" },
-              { title: "Young Families", description: "Healthy options the whole family will enjoy" },
-              { title: "Busy Couples", description: "Spend more time together, less time cooking" }
+              { title: "Frequent Travelers", description: "Good food on the go." },
+              { title: "Busy Families and Couples", description: "Spend more time together, less time cooking" }
             ].map((profile, idx) => (
-              <div 
+              <div
                 key={idx}
-                className="p-8 bg-gradient-to-br from-teal-50 to-lime-50 rounded-lg border-l-4 border-lime-500 hover:shadow-lg transition-all duration-300 hover:scale-105 animate-slide-up"
+                className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 animate-slide-up"
                 style={{ animationDelay: `${idx * 0.15}s` }}
               >
-                <div className="flex items-center gap-3 mb-3">
-                  <Users className="w-6 h-6 text-lime-500" />
-                  <h3 className="text-lg font-bold text-teal-700">{profile.title}</h3>
-                </div>
-                <p className="text-gray-600 text-sm">{profile.description}</p>
+                <h3 className="text-lg font-bold text-teal-700 mb-3" style={{ fontFamily: "sans-serif" }}>{profile.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{profile.description}</p>
               </div>
             ))}
           </div>
