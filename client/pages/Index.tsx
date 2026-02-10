@@ -119,25 +119,30 @@ export default function Index() {
       </section>
 
       {/* Who It's For Section */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-12 animate-fade-in" style={{ fontFamily: "sans-serif" }}>
             Who It's For
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "Working Professionals", description: "Skip the lunch rush. Nutritious meals delivered to your office" },
-              { title: "Frequent Travelers", description: "Good food on the go." },
-              { title: "Busy Families and Couples", description: "Spend more time together, less time cooking" }
+              { title: "Working Professionals", description: "Skip the lunch rush. Nutritious meals delivered to your office", Icon: Briefcase },
+              { title: "Frequent Travelers", description: "Good food on the go.", Icon: MapPin },
+              { title: "Busy Families and Couples", description: "Spend more time together, less time cooking", Icon: Heart }
             ].map((profile, idx) => (
               <div
                 key={idx}
-                className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 animate-slide-up"
+                className="group p-8 bg-white border-2 border-teal-100 rounded-lg hover:border-lime-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-slide-up text-center"
                 style={{ animationDelay: `${idx * 0.15}s` }}
               >
-                <h3 className="text-lg font-bold text-teal-700 mb-3" style={{ fontFamily: "sans-serif" }}>{profile.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{profile.description}</p>
+                <div className="flex justify-center mb-6">
+                  <div className="p-4 bg-lime-100 rounded-full group-hover:bg-lime-500 transition-colors duration-300">
+                    <profile.Icon className="w-8 h-8 text-teal-700 group-hover:text-white transition-colors duration-300" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-teal-700 text-center mb-2" style={{ fontFamily: "sans-serif" }}>{profile.title}</h3>
+                <p className="text-gray-600 text-center text-sm">{profile.description}</p>
               </div>
             ))}
           </div>
