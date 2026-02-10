@@ -179,9 +179,11 @@ export default function Index() {
             {/* Logo & Branding */}
             <div className="text-center md:text-left">
               <div className="flex items-center gap-2 justify-center md:justify-start mb-4">
-                <svg className="w-8 h-8" viewBox="0 0 200 200" fill="none">
-                  <path d="M60 60L100 80L100 120L60 140M100 80L140 60L140 100L100 120M80 100L120 100" stroke="#9BCF55" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                </svg>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F5d9e4e2414a6480bbade330f0c7cbe3d?format=webp&width=800&height=1200"
+                  alt="Zipplit Logo"
+                  className="w-8 h-8 object-contain"
+                />
                 <span className="text-lg font-bold">Zipplit</span>
               </div>
               <p className="text-teal-200 text-sm">Fresh. Healthy. Delivered.</p>
