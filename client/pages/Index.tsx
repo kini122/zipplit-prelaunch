@@ -145,15 +145,21 @@ export default function Index() {
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 mb-8 animate-slide-up" style={{ animationDelay: "0.2s" }}>
             <h3 className="text-white text-xl font-bold mb-6">Open Roles</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-              {["Business Development", "Sales Executive", "Operations Intern", "Operations Manager"].map((role, idx) => (
-                <div key={idx} className="bg-white/20 rounded-lg py-3 px-2 text-white font-semibold text-sm">
-                  {role}
+              {[
+                { role: "Business Development", Icon: TrendingUp },
+                { role: "Sales Executive", Icon: Briefcase },
+                { role: "Operations Intern", Icon: ClipboardList },
+                { role: "Operations Manager", Icon: Settings }
+              ].map((item, idx) => (
+                <div key={idx} className="bg-white/20 rounded-lg py-4 px-3 text-white font-semibold text-sm flex flex-col items-center gap-2">
+                  <item.Icon className="w-5 h-5 text-lime-300" />
+                  <span>{item.role}</span>
                 </div>
               ))}
             </div>
-            
-            <p className="text-lime-100 mb-6 text-sm">
-              Freshers or up to 2 years experience. Confidence. Communication. Commitment.
+
+            <p className="text-lime-100 mb-6 text-sm max-w-2xl mx-auto">
+              We're looking for driven individuals with 0-2 years of experience. Bring your enthusiasm, strong communication skills, and commitment to growing fresh innovation with us.
             </p>
 
             <a 
