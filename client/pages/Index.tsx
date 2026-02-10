@@ -234,7 +234,7 @@ export default function Index() {
 
             {/* Social Links */}
             <div>
-              <h4 className="font-bold text-lime-400 mb-4">Follow Us</h4>
+              <h4 className="font-bold text-lime-400 mb-4" style={{ fontFamily: "sans-serif" }}>Follow Us</h4>
               <div className="flex gap-4 justify-center md:justify-start">
                 <a href="#" className="p-2 bg-white/10 rounded-lg hover:bg-lime-500 hover:text-teal-700 transition-all duration-300">
                   <Facebook className="w-5 h-5" />
