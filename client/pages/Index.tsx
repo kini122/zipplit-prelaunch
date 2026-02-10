@@ -251,7 +251,8 @@ export default function Index() {
 
           {/* Footer Bottom */}
           <div className="border-t border-white/10 pt-8 text-center text-teal-200 text-sm">
-            <p>&copy; 2024 Zipplit. Fresh meals delivered to Kochi. Preservative-free, always.</p>
+            <p className="mb-2">&copy; 2024 Zipplit. Launching soon in Kochi.</p>
+            <p className="text-lime-300 font-semibold">Launching Soon</p>
           </div>
         </div>
       </footer>
