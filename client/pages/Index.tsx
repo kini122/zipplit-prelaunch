@@ -134,7 +134,15 @@ export default function Index() {
       </section>
 
       {/* Join Our Team Section */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-teal-600 to-teal-700">
+      <section
+        className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8"
+        style={{
+          backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F7fd40f81982c4ab4ad96ca42309f6b0b)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover"
+        }}
+      >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2 animate-fade-in">
             Grow With Us
