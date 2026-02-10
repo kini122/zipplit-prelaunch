@@ -35,12 +35,11 @@ export default function Index() {
         <div className="relative z-10 w-full max-w-4xl mx-auto text-center">
           {/* Logo */}
           <div className="mb-8 animate-fade-in">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <svg className="w-16 h-16 sm:w-20 sm:h-20" viewBox="0 0 200 200" fill="none">
-                <path d="M60 60L100 80L100 120L60 140M100 80L140 60L140 100L100 120M80 100L120 100" stroke="#9BCF55" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-              </svg>
-              <span className="text-4xl sm:text-5xl font-bold text-white">Zipplit</span>
-            </div>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F5d9e4e2414a6480bbade330f0c7cbe3d?format=webp&width=800&height=1200"
+              alt="Zipplit Logo"
+              className="w-32 h-32 sm:w-40 sm:h-40 mx-auto object-contain"
+            />
           </div>
 
           {/* Main Headline */}
