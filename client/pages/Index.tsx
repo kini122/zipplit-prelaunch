@@ -48,18 +48,13 @@ export default function Index() {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg sm:text-xl text-lime-100 mb-10 animate-slide-up" style={{ animationDelay: "0.2s" }}>
+          <p className="text-lg sm:text-xl text-lime-100 mb-4 animate-slide-up" style={{ animationDelay: "0.2s" }}>
             100% Preservative-Free Meals in Kochi
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style={{ animationDelay: "0.3s" }}>
-            <button className="px-8 py-3 bg-lime-500 text-teal-700 font-bold rounded-lg hover:bg-lime-400 transition-all duration-300 hover:shadow-lg hover:scale-105 animate-pulse-subtle">
-              Order Now
-            </button>
-            <button className="px-8 py-3 bg-white/20 text-white font-bold rounded-lg border-2 border-white hover:bg-white/30 transition-all duration-300">
-              View Plans
-            </button>
+          {/* Launching Soon Badge */}
+          <div className="inline-block px-4 py-2 bg-lime-500 text-teal-700 font-bold rounded-full text-sm animate-slide-up" style={{ animationDelay: "0.3s" }}>
+            Launching Soon
           </div>
         </div>
       </section>
