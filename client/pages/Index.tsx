@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Calendar, Zap, Leaf, Heart, Users, Mail, Facebook, Instagram, Twitter, Briefcase, TrendingUp, ClipboardList, Settings } from "lucide-react";
+import { Calendar, Zap, Leaf, Heart, Users, Mail, Facebook, Instagram, Twitter, Briefcase, TrendingUp, ClipboardList, Settings, ChevronDown } from "lucide-react";
 
 export default function Index() {
   const [email, setEmail] = useState("");
