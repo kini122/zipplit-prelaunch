@@ -217,7 +217,7 @@ export default function Index() {
             </div>
 
             {/* Newsletter Signup */}
-            <div>
+            <div className="text-center">
               <h4 className="font-bold text-lime-400 mb-4" style={{ fontFamily: "sans-serif" }}>Stay Updated</h4>
               <form onSubmit={handleSignup} className="flex flex-col gap-2">
                 <input
@@ -228,7 +228,7 @@ export default function Index() {
                   className="px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-teal-200 text-sm focus:outline-none focus:border-lime-500"
                   required
                 />
-                <button 
+                <button
                   type="submit"
                   className="px-4 py-2 bg-lime-500 text-teal-700 font-bold rounded-lg hover:bg-lime-400 transition-all duration-300 text-sm"
                 >
@@ -238,9 +238,9 @@ export default function Index() {
             </div>
 
             {/* Social Links */}
-            <div>
+            <div className="text-center">
               <h4 className="font-bold text-lime-400 mb-4" style={{ fontFamily: "sans-serif" }}>Follow Us</h4>
-              <div className="flex gap-4 justify-center md:justify-start">
+              <div className="flex gap-4 justify-center">
                 <a href="#" className="p-2 bg-white/10 rounded-lg hover:bg-lime-500 hover:text-teal-700 transition-all duration-300">
                   <Facebook className="w-5 h-5" />
                 </a>
