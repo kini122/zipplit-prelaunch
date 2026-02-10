@@ -163,8 +163,10 @@ export default function Index() {
               We're looking for driven individuals with 0-2 years of experience. Bring your enthusiasm, strong communication skills, and commitment to growing fresh innovation with us.
             </p>
 
-            <a 
-              href="#"
+            <a
+              href="https://forms.gle/gzRLoJWTyQ5QEBkX7"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block px-8 py-3 bg-lime-500 text-teal-700 font-bold rounded-lg hover:bg-lime-400 transition-all duration-300 hover:shadow-lg hover:scale-105 animate-pulse-subtle"
             >
               Apply Now
