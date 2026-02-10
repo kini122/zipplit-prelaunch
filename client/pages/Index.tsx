@@ -59,7 +59,7 @@ export default function Index() {
           </p>
 
           {/* Launching Soon Text */}
-          <p className="text-3xl sm:text-5xl lg:text-6xl font-bold text-lime-300 animate-pulse-subtle" style={{ animationDelay: "0.3s" }}>
+          <p className="text-5xl sm:text-6xl lg:text-7xl font-bold text-lime-300 animate-pulse-subtle" style={{ animationDelay: "0.3s" }}>
             Launching Soon
           </p>
 
