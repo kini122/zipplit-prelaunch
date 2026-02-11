@@ -317,13 +317,13 @@ export default function Index() {
         <div className="max-w-4xl mx-auto text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white mb-2 animate-fade-in"
-            style={{ fontFamily: "sans-serif" }}
+            style={{ fontFamily: "sans-serif", backgroundColor: "rgba(10, 72, 73, 0.7)", padding: "16px 24px", borderRadius: "8px", display: "inline-block" }}
           >
             Grow With Us
           </h2>
           <p
             className="text-lime-100 text-lg mb-8 animate-slide-up"
-            style={{ animationDelay: "0.1s" }}
+            style={{ animationDelay: "0.1s", backgroundColor: "rgba(10, 72, 73, 0.6)", padding: "12px 20px", borderRadius: "6px", display: "inline-block", marginTop: "8px" }}
           >
             Join The Team
           </p>
