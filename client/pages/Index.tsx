@@ -11,6 +11,7 @@ import {
   Heart,
   MapPin,
 } from "lucide-react";
+import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 
 export default function Index() {
   const [email, setEmail] = useState("");
@@ -120,15 +121,16 @@ export default function Index() {
             Preservative-Free Meals in Kochi
           </p>
 
-          <p
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold text-lime-300 animate-pulse-subtle"
-            style={{
-              animationDelay: "0.3s",
-              textShadow: "0 0 30px rgba(155, 207, 85, 0.6), 0 0 60px rgba(155, 207, 85, 0.3)"
-            }}
-          >
-            Launching Soon
-          </p>
+          <div className="mt-8 mb-12">
+            <VelocityScroll
+              text="Launching Soon"
+              default_velocity={5}
+              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-lime-300"
+              style={{
+                textShadow: "0 0 30px rgba(155, 207, 85, 0.6), 0 0 60px rgba(155, 207, 85, 0.3)"
+              }}
+            />
+          </div>
 
           <button
             onClick={scrollToContent}
