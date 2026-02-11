@@ -271,7 +271,7 @@ export default function Index() {
               {
                 title: "Fresh and Healthy",
                 description: "Preservative-free, made with fresh ingredients",
-                image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&h=300&fit=crop",
+                image: "https://cdn.builder.io/api/v1/image/assets%2F31e04bb0599342f8b50394d1e8bce657%2F54949c5215bb4676b42b53329bb9407d",
               },
             ].map((item, idx) => (
               <div
