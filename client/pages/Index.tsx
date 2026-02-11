@@ -374,7 +374,7 @@ export default function Index() {
             <div className="text-center md:text-left">
               <div className="flex items-center gap-2 justify-center md:justify-start mb-4">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F5d9e4e2414a6480bbade330f0c7cbe3d?format=webp&width=800&height=1200"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F31e04bb0599342f8b50394d1e8bce657%2F2a7734eba886453c979a516fa95323f4?format=webp&width=800&height=1200"
                   alt="Zipplit Logo"
                   className="w-8 h-8 object-contain"
                 />
