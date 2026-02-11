@@ -197,7 +197,7 @@ export default function Index() {
 
 
       {/* The Solution Section */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "rgba(239, 248, 214, 0.19)" }}>
+      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "#e8f5d6" }}>
         <div className="max-w-6xl mx-auto">
           <h2
             className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-4 animate-fade-in"
@@ -216,7 +216,7 @@ export default function Index() {
               style={{ animationDelay: "0.1s" }}
             >
               <div className="flex justify-center mb-6">
-                <div className="p-4 bg-lime-100 rounded-full group-hover:bg-lime-500 transition-colors duration-300">
+                <div className="p-4 rounded-full group-hover:bg-lime-500 transition-colors duration-300" style={{ backgroundColor: "#e8f5d6" }}>
                   <Calendar className="w-8 h-8 text-teal-700 group-hover:text-white transition-colors duration-300" />
                 </div>
               </div>
@@ -237,7 +237,7 @@ export default function Index() {
               style={{ animationDelay: "0.2s" }}
             >
               <div className="flex justify-center mb-6">
-                <div className="p-4 bg-lime-100 rounded-full group-hover:bg-lime-500 transition-colors duration-300">
+                <div className="p-4 rounded-full group-hover:bg-lime-500 transition-colors duration-300" style={{ backgroundColor: "#e8f5d6" }}>
                   <Zap className="w-8 h-8 text-teal-700 group-hover:text-white transition-colors duration-300" />
                 </div>
               </div>
@@ -258,7 +258,7 @@ export default function Index() {
               style={{ animationDelay: "0.3s" }}
             >
               <div className="flex justify-center mb-6">
-                <div className="p-4 bg-lime-100 rounded-full group-hover:bg-lime-500 transition-colors duration-300">
+                <div className="p-4 rounded-full group-hover:bg-lime-500 transition-colors duration-300" style={{ backgroundColor: "#e8f5d6" }}>
                   <Leaf className="w-8 h-8 text-teal-700 group-hover:text-white transition-colors duration-300" />
                 </div>
               </div>
