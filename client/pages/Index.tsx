@@ -64,12 +64,6 @@ export default function Index() {
 
         {/* Animated background pattern */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-10 right-10 w-72 h-72 bg-lime-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-subtle"
-            style={{
-              animation: "pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-              boxShadow: "0 0 60px 30px rgba(155, 207, 85, 0.3)"
-            }}
-          ></div>
           <div
             className="absolute bottom-10 left-10 w-72 h-72 bg-lime-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-subtle"
             style={{
