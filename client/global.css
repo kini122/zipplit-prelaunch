@@ -34,8 +34,9 @@
     --sidebar-border: 40 10% 90%;
     --sidebar-ring: 180 68% 16%;
 
-    --font-heading: 'Fraunces', serif;
+    --font-heading: 'DM Serif Display', serif;
     --font-body: 'Nunito', sans-serif;
+    --font-brand: 'Nunito', sans-serif;
 
     --deep-teal: #0A4849;
     --fresh-lime: #9BCF55;
@@ -76,6 +77,39 @@
     background-color: #9BCF55;
     color: #0A4849;
   }
+
+  /* ─── WCAG: Focus styles ─── */
+  :focus-visible {
+    outline: 3px solid #9BCF55;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Remove default focus for mouse users */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+/* ─── Skip to main content (WCAG 2.4.1) ─── */
+.skip-to-main {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background: #0A4849;
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-decoration: none;
+  border-radius: 0 0 0.5rem 0;
+}
+.skip-to-main:focus {
+  left: 0;
+  outline: 3px solid #9BCF55;
+  outline-offset: 2px;
 }
 
 @layer utilities {
@@ -98,7 +132,7 @@
   }
 }
 
-/* Smooth scrollbar */
+/* ─── Smooth scrollbar ─── */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -113,7 +147,7 @@
   background: #0D5F60;
 }
 
-/* Mobile nav robustness */
+/* ─── Mobile nav robustness ─── */
 @media (max-width: 767px) {
   [data-testid="mobile-menu-toggle"] {
     display: flex !important;
@@ -122,5 +156,17 @@
 @media (min-width: 768px) {
   [data-testid="mobile-menu-toggle"] {
     display: none !important;
+  }
+}
+
+/* ─── WCAG: Reduced motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
