@@ -12,6 +12,7 @@ import {
   MapPin,
 } from "lucide-react";
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
+import { TextGradientScroll } from "@/components/ui/text-gradient-scroll";
 
 export default function Index() {
   const [email, setEmail] = useState("");
@@ -139,6 +140,25 @@ export default function Index() {
           >
             <ChevronDown className="w-8 h-8 text-white" />
           </button>
+        </div>
+      </section>
+
+      {/* Fresh Food First Section */}
+      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8 bg-black">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2
+            className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-8"
+            style={{ fontFamily: "sans-serif", fontWeight: "600" }}
+          >
+            Fresh Food First
+          </h2>
+
+          <TextGradientScroll
+            text="Kochi loves to eat. But we lost time to cook. Preservatives and quick fixes became the norm—at the cost of our health. The truth is simple: fresh food changes everything."
+            type="letter"
+            textOpacity="soft"
+            className="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed justify-center"
+          />
         </div>
       </section>
 
