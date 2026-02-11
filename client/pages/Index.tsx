@@ -97,7 +97,7 @@ export default function Index() {
         <div className="relative z-10 w-full max-w-4xl mx-auto text-center">
           <div className="mb-8 animate-fade-in">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F6994d8923852425c8cfa44070d4ac047?format=webp&width=800&height=1200"
+              src="https://cdn.builder.io/api/v1/image/assets%2F31e04bb0599342f8b50394d1e8bce657%2F44c8d660d3594781a246b393dfe14b57?format=webp&width=800&height=1200"
               alt="Zipplit Logo"
               className="w-40 h-40 sm:w-48 sm:h-48 mx-auto object-cover rounded-lg animate-shimmer"
             />
@@ -110,11 +110,12 @@ export default function Index() {
           </div>
 
           <h1
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 animate-slide-up"
+            className="font-bold text-white mb-4 animate-slide-up"
             style={{
               animationDelay: "0.1s",
               fontFamily: "sans-serif",
-              textShadow: "0 0 20px rgba(155, 207, 85, 0.4)"
+              textShadow: "0 0 20px rgba(155, 207, 85, 0.4)",
+              fontSize: "clamp(57.6px, 9vw, 96px)"
             }}
           >
             Fresh. Healthy. Effortless.
