@@ -15,6 +15,12 @@ import {
   Settings,
   ChevronDown,
   MapPin,
+  Clock,
+  AlertCircle,
+  DollarSign,
+  CheckCircle,
+  Utensils,
+  Smile,
 } from "lucide-react";
 
 export default function Index() {
@@ -264,6 +270,214 @@ export default function Index() {
               <p className="text-gray-600 text-center text-sm">
                 100% preservative-free, made with fresh ingredients
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Problem Section */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-4 animate-fade-in"
+            style={{ fontFamily: "sans-serif" }}
+          >
+            The Challenge of Healthy Eating
+          </h2>
+          <p className="text-gray-600 text-center mb-12 text-lg max-w-3xl mx-auto">
+            In today's busy world, finding nutritious, preservative-free meals is harder than ever
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Problem 1 */}
+            <div
+              className="group p-8 bg-white rounded-lg border-l-4 border-red-500 hover:shadow-lg transition-all duration-300 animate-slide-up"
+              style={{ animationDelay: "0.1s" }}
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <div className="p-3 bg-red-100 rounded-full">
+                  <Clock className="w-6 h-6 text-red-600" />
+                </div>
+                <h3 className="text-xl font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
+                  No Time to Cook
+                </h3>
+              </div>
+              <p className="text-gray-600">
+                Long work hours and busy schedules leave little room for meal preparation
+              </p>
+            </div>
+
+            {/* Problem 2 */}
+            <div
+              className="group p-8 bg-white rounded-lg border-l-4 border-red-500 hover:shadow-lg transition-all duration-300 animate-slide-up"
+              style={{ animationDelay: "0.2s" }}
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <div className="p-3 bg-red-100 rounded-full">
+                  <AlertCircle className="w-6 h-6 text-red-600" />
+                </div>
+                <h3 className="text-xl font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
+                  Unhealthy Options
+                </h3>
+              </div>
+              <p className="text-gray-600">
+                Most available meals are loaded with preservatives and artificial additives
+              </p>
+            </div>
+
+            {/* Problem 3 */}
+            <div
+              className="group p-8 bg-white rounded-lg border-l-4 border-red-500 hover:shadow-lg transition-all duration-300 animate-slide-up"
+              style={{ animationDelay: "0.3s" }}
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <div className="p-3 bg-red-100 rounded-full">
+                  <DollarSign className="w-6 h-6 text-red-600" />
+                </div>
+                <h3 className="text-xl font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
+                  Premium Price Tag
+                </h3>
+              </div>
+              <p className="text-gray-600">
+                Quality food delivery services are expensive and out of reach for many
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Solution Section */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-4 animate-fade-in"
+            style={{ fontFamily: "sans-serif" }}
+          >
+            How Zipplit Solves It
+          </h2>
+          <p className="text-gray-600 text-center mb-12 text-lg max-w-3xl mx-auto">
+            Fresh, healthy meals delivered to your door without the hassle
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Solution 1 */}
+            <div
+              className="group p-8 bg-gradient-to-br from-lime-50 to-white rounded-lg border-2 border-lime-200 hover:border-lime-500 hover:shadow-lg transition-all duration-300 animate-slide-up"
+              style={{ animationDelay: "0.1s" }}
+            >
+              <div className="flex items-start gap-4 mb-4">
+                <div className="p-3 bg-lime-100 rounded-full flex-shrink-0">
+                  <CheckCircle className="w-6 h-6 text-lime-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
+                    Preservative-Free
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-1">
+                    100% fresh ingredients, no artificial additives or preservatives
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Solution 2 */}
+            <div
+              className="group p-8 bg-gradient-to-br from-lime-50 to-white rounded-lg border-2 border-lime-200 hover:border-lime-500 hover:shadow-lg transition-all duration-300 animate-slide-up"
+              style={{ animationDelay: "0.2s" }}
+            >
+              <div className="flex items-start gap-4 mb-4">
+                <div className="p-3 bg-lime-100 rounded-full flex-shrink-0">
+                  <Zap className="w-6 h-6 text-lime-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
+                    Lightning-Fast Delivery
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Quick doorstep delivery in Kochi, ready to eat in minutes
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Solution 3 */}
+            <div
+              className="group p-8 bg-gradient-to-br from-lime-50 to-white rounded-lg border-2 border-lime-200 hover:border-lime-500 hover:shadow-lg transition-all duration-300 animate-slide-up"
+              style={{ animationDelay: "0.3s" }}
+            >
+              <div className="flex items-start gap-4 mb-4">
+                <div className="p-3 bg-lime-100 rounded-full flex-shrink-0">
+                  <DollarSign className="w-6 h-6 text-lime-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
+                    Affordable Pricing
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Premium quality at accessible prices for everyone
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Solution 4 */}
+            <div
+              className="group p-8 bg-gradient-to-br from-lime-50 to-white rounded-lg border-2 border-lime-200 hover:border-lime-500 hover:shadow-lg transition-all duration-300 animate-slide-up"
+              style={{ animationDelay: "0.4s" }}
+            >
+              <div className="flex items-start gap-4 mb-4">
+                <div className="p-3 bg-lime-100 rounded-full flex-shrink-0">
+                  <Utensils className="w-6 h-6 text-lime-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
+                    Customizable Meals
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Choose your meals, frequency, and delivery schedule
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Solution 5 */}
+            <div
+              className="group p-8 bg-gradient-to-br from-lime-50 to-white rounded-lg border-2 border-lime-200 hover:border-lime-500 hover:shadow-lg transition-all duration-300 animate-slide-up"
+              style={{ animationDelay: "0.5s" }}
+            >
+              <div className="flex items-start gap-4 mb-4">
+                <div className="p-3 bg-lime-100 rounded-full flex-shrink-0">
+                  <Leaf className="w-6 h-6 text-lime-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
+                    Sustainable
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Locally sourced, fresh ingredients supporting local farmers
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Solution 6 */}
+            <div
+              className="group p-8 bg-gradient-to-br from-lime-50 to-white rounded-lg border-2 border-lime-200 hover:border-lime-500 hover:shadow-lg transition-all duration-300 animate-slide-up"
+              style={{ animationDelay: "0.6s" }}
+            >
+              <div className="flex items-start gap-4 mb-4">
+                <div className="p-3 bg-lime-100 rounded-full flex-shrink-0">
+                  <Smile className="w-6 h-6 text-lime-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
+                    Peace of Mind
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Trust us to deliver nutrition without compromise
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
