@@ -197,7 +197,7 @@ export default function Index() {
 
 
       {/* The Solution Section */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "rgba(239, 248, 214, 0.19)" }}>
         <div className="max-w-6xl mx-auto">
           <h2
             className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-4 animate-fade-in"
