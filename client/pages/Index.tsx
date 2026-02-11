@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   ChevronDown,
   Facebook,
@@ -30,8 +30,39 @@ export default function Index() {
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
+  // Scroll animation effect
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("opacity-100", "translate-y-0");
+            entry.target.classList.remove("opacity-0", "translate-y-8");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const cards = document.querySelectorAll(".scroll-card");
+    cards.forEach((card) => observer.observe(card));
+
+    return () => {
+      cards.forEach((card) => observer.unobserve(card));
+    };
+  }, []);
+
   return (
     <div className="w-full overflow-hidden bg-white">
+      <style>{`
+        .scroll-card {
+          transition: opacity 0.6s ease-out, transform 0.6s ease-out, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .scroll-card.opacity-100 {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      `}</style>
       {/* Hero Section */}
       <section className="relative min-h-screen pt-20 px-4 sm:px-6 lg:px-8 flex items-center justify-center overflow-hidden">
         <video
@@ -125,25 +156,25 @@ export default function Index() {
                 title: "Working Professionals",
                 description: "Skip the lunch rush. Nutritious meals delivered to your office",
                 Icon: Briefcase,
-                image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1585238341710-4913d3ca7b0f?w=400&h=300&fit=crop",
               },
               {
                 title: "Frequent Travelers",
                 description: "Good food on the go.",
                 Icon: MapPin,
-                image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1504674900600-f032a568e944?w=400&h=300&fit=crop",
               },
               {
                 title: "Busy Families and Couples",
                 description: "Spend more time together, less time cooking",
                 Icon: Heart,
-                image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1543521521-2a1a0d5d5f8f?w=400&h=300&fit=crop",
               },
             ].map((profile, idx) => (
               <div
                 key={idx}
-                className="group bg-white border-2 border-teal-100 rounded-lg overflow-hidden hover:border-lime-500 hover:shadow-xl transition-all duration-300 animate-slide-up"
-                style={{ animationDelay: `${idx * 0.15}s` }}
+                className="scroll-card group bg-white border-2 border-teal-100 rounded-lg overflow-hidden hover:border-lime-500 hover:shadow-xl transition-all duration-300 opacity-0 translate-y-8"
+                style={{ transitionProperty: "opacity, transform, border-color, box-shadow" }}
               >
                 {/* Image */}
                 <div className="relative h-48 sm:h-56 overflow-hidden bg-gradient-to-br from-lime-100 to-teal-100">
@@ -190,23 +221,23 @@ export default function Index() {
               {
                 title: "Subscription",
                 description: "Choose your preferred delivery schedule and meal options",
-                image: "https://images.unsplash.com/photo-1484723969409-c5140716266d?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop",
               },
               {
                 title: "Effortless",
                 description: "Fresh meals delivered quickly to your doorstep",
-                image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
               },
               {
                 title: "Fresh and Healthy",
                 description: "Preservative-free, made with fresh ingredients",
-                image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop",
+                image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&h=300&fit=crop",
               },
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="group bg-white border-2 border-lime-100 rounded-lg overflow-hidden hover:border-lime-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-slide-up"
-                style={{ animationDelay: `${idx * 0.1}s` }}
+                className="scroll-card group bg-white border-2 border-lime-100 rounded-lg overflow-hidden hover:border-lime-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 opacity-0 translate-y-8"
+                style={{ transitionProperty: "opacity, transform, border-color, box-shadow" }}
               >
                 {/* Image */}
                 <div className="relative h-48 sm:h-56 overflow-hidden bg-gradient-to-br from-lime-100 to-white">
