@@ -245,7 +245,7 @@ export default function Index() {
               alt="Vibrant fresh fruits and vegetables arranged beautifully on a clean surface"
               className="absolute inset-0 w-full h-full object-cover"
               style={{ filter: "brightness(0.35)" }}
-              fetchPriority="high"
+              fetchPriority={"high" as any}
               width={1920}
               height={1080}
               data-testid="hero-image"
