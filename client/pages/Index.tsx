@@ -10,6 +10,10 @@ import {
   Settings,
   Heart,
   MapPin,
+  Clock,
+  Plane,
+  Users,
+  Home,
 } from "lucide-react";
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 import { TextGradientScroll } from "@/components/ui/text-gradient-scroll";
@@ -180,12 +184,18 @@ export default function Index() {
                 title: "Working Professionals",
                 description: "Skip the lunch rush. Nutritious meals delivered to your office. Stay healthy and energized throughout your workday without worrying about meal prep.",
                 content: (
-                  <div className="h-full w-full bg-gradient-to-br from-teal-500 to-lime-500 flex items-center justify-center text-white overflow-hidden">
+                  <div className="h-full w-full bg-gradient-to-br from-teal-500 to-lime-500 flex items-center justify-center text-white overflow-hidden relative">
                     <img
                       src="https://images.unsplash.com/photo-1585238341710-4913d3ca7b0f?w=400&h=300&fit=crop"
                       alt="Working Professionals"
                       className="w-full h-full object-cover"
                     />
+                    <div className="absolute top-6 left-6 bg-white/95 rounded-full p-4 shadow-lg">
+                      <Briefcase className="w-8 h-8 text-teal-700" />
+                    </div>
+                    <div className="absolute bottom-6 right-6 bg-white/95 rounded-full p-4 shadow-lg">
+                      <Clock className="w-8 h-8 text-teal-700" />
+                    </div>
                   </div>
                 ),
               },
@@ -193,12 +203,18 @@ export default function Index() {
                 title: "Frequent Travelers",
                 description: "Good food on the go. Whether you're traveling for work or pleasure, take fresh, healthy meals with you. No more airport fast food.",
                 content: (
-                  <div className="h-full w-full bg-gradient-to-br from-teal-500 to-lime-500 flex items-center justify-center text-white overflow-hidden">
+                  <div className="h-full w-full bg-gradient-to-br from-teal-500 to-lime-500 flex items-center justify-center text-white overflow-hidden relative">
                     <img
                       src="https://images.unsplash.com/photo-1504674900600-f032a568e944?w=400&h=300&fit=crop"
                       alt="Frequent Travelers"
                       className="w-full h-full object-cover"
                     />
+                    <div className="absolute top-6 left-6 bg-white/95 rounded-full p-4 shadow-lg">
+                      <Plane className="w-8 h-8 text-teal-700" />
+                    </div>
+                    <div className="absolute bottom-6 right-6 bg-white/95 rounded-full p-4 shadow-lg">
+                      <MapPin className="w-8 h-8 text-teal-700" />
+                    </div>
                   </div>
                 ),
               },
@@ -206,12 +222,18 @@ export default function Index() {
                 title: "Busy Families and Couples",
                 description: "Spend more time together, less time cooking. Let us handle the meal prep so you can focus on what matters—quality time with loved ones.",
                 content: (
-                  <div className="h-full w-full bg-gradient-to-br from-teal-500 to-lime-500 flex items-center justify-center text-white overflow-hidden">
+                  <div className="h-full w-full bg-gradient-to-br from-teal-500 to-lime-500 flex items-center justify-center text-white overflow-hidden relative">
                     <img
                       src="https://images.unsplash.com/photo-1543521521-2a1a0d5d5f8f?w=400&h=300&fit=crop"
                       alt="Busy Families and Couples"
                       className="w-full h-full object-cover"
                     />
+                    <div className="absolute top-6 left-6 bg-white/95 rounded-full p-4 shadow-lg">
+                      <Users className="w-8 h-8 text-teal-700" />
+                    </div>
+                    <div className="absolute bottom-6 right-6 bg-white/95 rounded-full p-4 shadow-lg">
+                      <Heart className="w-8 h-8 text-rose-500" />
+                    </div>
                   </div>
                 ),
               },
