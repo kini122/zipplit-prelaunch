@@ -244,7 +244,7 @@ export default function Index() {
       </section>
 
       {/* How Zipplit Does It Section */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "#e8f5d6" }}>
+      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "#e8f5d6", marginTop: "-19px" }}>
         <div className="max-w-6xl mx-auto">
           <h2
             className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-4 animate-fade-in"
