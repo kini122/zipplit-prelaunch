@@ -47,7 +47,21 @@ export default function Index() {
       }}
     >
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-gradient-to-br from-teal-500 via-teal-600 to-teal-700 pt-20 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+      <section className="relative min-h-screen pt-20 px-4 sm:px-6 lg:px-8 flex items-center justify-center overflow-hidden">
+        {/* Video Background */}
+        <video
+          autoPlay
+          muted
+          loop
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ filter: "brightness(0.6)" }}
+        >
+          <source src="https://cdn.builder.io/o/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F2141fa4cf5dc490e87054929b1d70d5e?alt=media&token=4fb7e327-f2ce-4702-b074-ab13ebc41427&apiKey=2aea7158bf6b409ba9a64ab0f37870bb" type="video/mp4" />
+        </video>
+
+        {/* Tint Overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
+
         {/* Animated background pattern */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-10 right-10 w-72 h-72 bg-lime-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-subtle"></div>
