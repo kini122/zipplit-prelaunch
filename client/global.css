@@ -112,3 +112,15 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #0D5F60;
 }
+
+/* Mobile nav robustness */
+@media (max-width: 767px) {
+  [data-testid="mobile-menu-toggle"] {
+    display: flex !important;
+  }
+}
+@media (min-width: 768px) {
+  [data-testid="mobile-menu-toggle"] {
+    display: none !important;
+  }
+}
