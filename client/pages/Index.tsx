@@ -110,173 +110,124 @@ export default function Index() {
       </section>
 
       {/* Who It's For Section */}
-      <section id="content-section" className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8 bg-white">
+      <section id="content-section" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
-            {/* Left Column - Text */}
-            <div className="flex flex-col justify-center">
-              <h2
-                className="text-4xl sm:text-5xl font-bold text-teal-700 mb-8 animate-fade-in"
-                style={{ fontFamily: "sans-serif" }}
-              >
-                Who It's For
-              </h2>
-              
-              <div className="space-y-10">
-                {[
-                  {
-                    title: "Working Professionals",
-                    description: "Skip the lunch rush. Nutritious meals delivered to your office",
-                    Icon: Briefcase,
-                  },
-                  {
-                    title: "Frequent Travelers",
-                    description: "Good food on the go.",
-                    Icon: MapPin,
-                  },
-                  {
-                    title: "Busy Families and Couples",
-                    description: "Spend more time together, less time cooking",
-                    Icon: Heart,
-                  },
-                ].map((profile, idx) => (
-                  <div
-                    key={idx}
-                    className="flex gap-4 animate-slide-up"
-                    style={{ animationDelay: `${idx * 0.15}s` }}
-                  >
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-full bg-lime-100">
-                        <profile.Icon className="h-6 w-6 text-teal-700" />
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
-                        {profile.title}
-                      </h3>
-                      <p className="text-gray-600 text-sm mt-1">{profile.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-12 animate-fade-in"
+            style={{ fontFamily: "sans-serif" }}
+          >
+            Who It's For
+          </h2>
 
-            {/* Right Column - Images */}
-            <div className="relative h-96 sm:h-[600px] lg:h-[700px]">
-              <div className="absolute inset-0 grid grid-cols-2 gap-4">
-                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-lime-100 to-teal-100">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {[
+              {
+                title: "Working Professionals",
+                description: "Skip the lunch rush. Nutritious meals delivered to your office",
+                Icon: Briefcase,
+                image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop",
+              },
+              {
+                title: "Frequent Travelers",
+                description: "Good food on the go.",
+                Icon: MapPin,
+                image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+              },
+              {
+                title: "Busy Families and Couples",
+                description: "Spend more time together, less time cooking",
+                Icon: Heart,
+                image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&h=300&fit=crop",
+              },
+            ].map((profile, idx) => (
+              <div
+                key={idx}
+                className="group bg-white border-2 border-teal-100 rounded-lg overflow-hidden hover:border-lime-500 hover:shadow-xl transition-all duration-300 animate-slide-up"
+                style={{ animationDelay: `${idx * 0.15}s` }}
+              >
+                {/* Image */}
+                <div className="relative h-48 sm:h-56 overflow-hidden bg-gradient-to-br from-lime-100 to-teal-100">
                   <img
-                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=500&fit=crop"
-                    alt="Healthy meal bowl"
-                    className="w-full h-full object-cover"
+                    src={profile.image}
+                    alt={profile.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-teal-100 to-lime-100 mt-8">
-                  <img
-                    src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=500&fit=crop"
-                    alt="Fresh vegetables"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-lime-100 to-teal-100 mt-8">
-                  <img
-                    src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&h=500&fit=crop"
-                    alt="Protein-rich meal"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-teal-100 to-lime-100">
-                  <img
-                    src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=500&fit=crop"
-                    alt="Fresh salmon dish"
-                    className="w-full h-full object-cover"
-                  />
+
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="flex items-center justify-center h-10 w-10 rounded-full bg-lime-100 group-hover:bg-lime-500 transition-colors duration-300">
+                      <profile.Icon className="h-5 w-5 text-teal-700 group-hover:text-white transition-colors duration-300" />
+                    </div>
+                    <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
+                      {profile.title}
+                    </h3>
+                  </div>
+                  <p className="text-gray-600 text-sm">{profile.description}</p>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* How Zipplit Does It Section */}
-      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "#e8f5d6" }}>
+      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "#e8f5d6" }}>
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
-            {/* Left Column - Text */}
-            <div className="flex flex-col justify-center order-2 lg:order-1">
-              <h2
-                className="text-4xl sm:text-5xl font-bold text-teal-700 mb-8 animate-fade-in"
-                style={{ fontFamily: "sans-serif" }}
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-4 animate-fade-in"
+            style={{ fontFamily: "sans-serif" }}
+          >
+            How Zipplit Does It
+          </h2>
+          <p className="text-gray-600 text-center mb-12 text-lg max-w-3xl mx-auto">
+            Fresh, healthy meals delivered to your door without the hassle. We believe in simple nutrition with quality ingredients.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {[
+              {
+                title: "Subscription",
+                description: "Choose your preferred delivery schedule and meal options",
+                image: "https://images.unsplash.com/photo-1484723969409-c5140716266d?w=400&h=300&fit=crop",
+              },
+              {
+                title: "Effortless",
+                description: "Fresh meals delivered quickly to your doorstep",
+                image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop",
+              },
+              {
+                title: "Fresh and Healthy",
+                description: "Preservative-free, made with fresh ingredients",
+                image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop",
+              },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="group bg-white border-2 border-lime-100 rounded-lg overflow-hidden hover:border-lime-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-slide-up"
+                style={{ animationDelay: `${idx * 0.1}s` }}
               >
-                How Zipplit Does It
-              </h2>
-              
-              <p className="text-gray-600 mb-8 text-lg">
-                Fresh, healthy meals delivered to your door without the hassle. We believe in simple nutrition with quality ingredients.
-              </p>
+                {/* Image */}
+                <div className="relative h-48 sm:h-56 overflow-hidden bg-gradient-to-br from-lime-100 to-white">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
 
-              <div className="space-y-8">
-                {[
-                  {
-                    title: "Subscription",
-                    description: "Choose your preferred delivery schedule and meal options",
-                  },
-                  {
-                    title: "Effortless",
-                    description: "Fresh meals delivered quickly to your doorstep",
-                  },
-                  {
-                    title: "Fresh and Healthy",
-                    description: "Preservative-free, made with fresh ingredients",
-                  },
-                ].map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="pb-8 border-b border-teal-200 last:border-b-0 animate-slide-up"
-                    style={{ animationDelay: `${idx * 0.15}s` }}
-                  >
-                    <h3 className="text-xl font-bold text-teal-700 mb-2" style={{ fontFamily: "sans-serif" }}>
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-600">{item.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Right Column - Images */}
-            <div className="relative h-96 sm:h-[600px] lg:h-[700px] order-1 lg:order-2">
-              <div className="absolute inset-0 grid grid-cols-2 gap-4">
-                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-lime-100 to-white">
-                  <img
-                    src="https://images.unsplash.com/photo-1484723969409-c5140716266d?w=400&h=500&fit=crop"
-                    alt="Meal prep"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-white to-lime-100 mt-8">
-                  <img
-                    src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=500&fit=crop"
-                    alt="Fresh ingredients"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-lime-100 to-white mt-8">
-                  <img
-                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=500&fit=crop"
-                    alt="Healthy delivery"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-white to-lime-100">
-                  <img
-                    src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&h=500&fit=crop"
-                    alt="Nutritious meal"
-                    className="w-full h-full object-cover"
-                  />
+                {/* Content */}
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold text-teal-700 text-center mb-2" style={{ fontFamily: "sans-serif" }}>
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 text-center text-sm">
+                    {item.description}
+                  </p>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
