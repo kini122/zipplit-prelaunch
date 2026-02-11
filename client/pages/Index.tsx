@@ -297,8 +297,7 @@ export default function Index() {
       <section
         className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8"
         style={{
-          backgroundImage:
-            "url(https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F7fd40f81982c4ab4ad96ca42309f6b0b)",
+          backgroundColor: "rgba(148, 201, 77, 1)",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
