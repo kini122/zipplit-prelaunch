@@ -266,7 +266,7 @@ export default function Index() {
               {
                 title: "Effortless",
                 description: "Fresh meals delivered quickly to your doorstep",
-                image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
+                image: "https://cdn.builder.io/api/v1/image/assets%2F31e04bb0599342f8b50394d1e8bce657%2Ff7acb3864c364de58ac819bb67461d30",
               },
               {
                 title: "Fresh and Healthy",
