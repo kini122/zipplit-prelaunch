@@ -241,8 +241,8 @@ export default function Index() {
           >
             {/* Static hero image */}
             <img
-              src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=1920&q=80&auto=format&fit=crop"
-              alt="A vibrant spread of fresh, colorful ingredients and dishes on a wooden table"
+              src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=1920&q=80&auto=format&fit=crop"
+              alt="Vibrant fresh fruits and vegetables arranged beautifully on a clean surface"
               className="absolute inset-0 w-full h-full object-cover"
               style={{ filter: "brightness(0.35)" }}
               fetchPriority="high"
