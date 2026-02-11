@@ -79,7 +79,7 @@ export default function Index() {
           className="absolute inset-0 w-full h-full object-cover"
           style={{ filter: "brightness(0.75)" }}
         >
-          <source src="https://cdn.builder.io/o/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F2141fa4cf5dc490e87054929b1d70d5e?alt=media&token=4fb7e327-f2ce-4702-b074-ab13ebc41427&apiKey=2aea7158bf6b409ba9a64ab0f37870bb" type="video/mp4" />
+          <source src="https://cdn.builder.io/o/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F2141fa4cf5dc490e87054929b1d70d5e?alt=media&token=zipplit-preview&apiKey=2aea7158bf6b409ba9a64ab0f37870bb" type="video/mp4" />
         </video>
 
         <div className="absolute inset-0 bg-black/25"></div>
