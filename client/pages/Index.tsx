@@ -261,7 +261,7 @@ export default function Index() {
               {
                 title: "Subscription",
                 description: "Choose your preferred delivery schedule and meal options",
-                image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=300&fit=crop",
+                image: "https://cdn.builder.io/api/v1/image/assets%2F31e04bb0599342f8b50394d1e8bce657%2Fe5dd7742e9e5448fa4e4ccb226bf0476",
               },
               {
                 title: "Effortless",
