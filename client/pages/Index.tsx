@@ -151,7 +151,7 @@ export default function Index() {
             Who It's For
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               {
                 title: "Working Professionals",
@@ -172,21 +172,21 @@ export default function Index() {
             ].map((profile, idx) => (
               <div
                 key={idx}
-                className="group p-8 bg-white border-2 border-teal-100 rounded-lg hover:border-lime-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-slide-up text-center"
+                className="flex flex-col items-center text-center animate-slide-up"
                 style={{ animationDelay: `${idx * 0.15}s` }}
               >
-                <div className="flex justify-center mb-6">
-                  <div className="p-4 bg-lime-100 rounded-full group-hover:bg-lime-500 transition-colors duration-300">
-                    <profile.Icon className="w-8 h-8 text-teal-700 group-hover:text-white transition-colors duration-300" />
+                <div className="mb-6">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-lime-100 text-teal-700 hover:bg-lime-500 hover:text-white transition-colors duration-300">
+                    <profile.Icon className="w-8 h-8" />
                   </div>
                 </div>
                 <h3
-                  className="text-xl font-bold text-teal-700 text-center mb-2"
+                  className="text-xl font-bold text-teal-700 mb-3"
                   style={{ fontFamily: "sans-serif" }}
                 >
                   {profile.title}
                 </h3>
-                <p className="text-gray-600 text-center text-sm">
+                <p className="text-gray-600 text-sm max-w-xs">
                   {profile.description}
                 </p>
               </div>
