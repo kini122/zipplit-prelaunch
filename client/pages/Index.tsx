@@ -169,7 +169,7 @@ export default function Index() {
       </section>
 
       {/* Who It's For Section */}
-      <section id="content-section" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "rgba(155, 207, 85, 1)" }}>
+      <section id="content-section" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}>
         <div className="max-w-6xl mx-auto">
           <h2
             className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-12 animate-fade-in"
