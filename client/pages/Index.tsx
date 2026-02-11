@@ -286,7 +286,7 @@ export default function Index() {
 
               <motion.p
                 {...motionProps(0.3)}
-                className="font-body text-lg sm:text-xl text-white/85 mb-10 max-w-2xl mx-auto"
+                className="font-body text-lg sm:text-xl font-medium text-white/90 mb-10 max-w-2xl mx-auto"
                 data-testid="hero-subheading"
               >
                 Kochi's first 100% preservative-free meal subscription.
@@ -378,7 +378,7 @@ export default function Index() {
 
               <FadeUp delay={0.2}>
                 <p
-                  className="font-body text-xl sm:text-2xl md:text-3xl leading-relaxed text-primary/70 max-w-3xl mx-auto"
+                  className="font-body text-xl sm:text-2xl md:text-3xl font-medium leading-relaxed text-primary/75 max-w-3xl mx-auto"
                   data-testid="manifesto-text"
                 >
                   Kochi loves to eat. But somewhere along the way, we traded time for
@@ -479,7 +479,7 @@ export default function Index() {
                       <h3 className="font-heading text-xl sm:text-2xl text-primary mb-3">
                         {card.title}
                       </h3>
-                      <p className="font-body text-base text-primary/60 leading-relaxed">
+                      <p className="font-body text-base font-medium text-primary/70 leading-relaxed">
                         {card.description}
                       </p>
                     </motion.article>
@@ -511,7 +511,7 @@ export default function Index() {
                   >
                     How Zipplit Does It
                   </h2>
-                  <p className="font-body text-base sm:text-lg text-primary/60 max-w-2xl mx-auto">
+                  <p className="font-body text-base sm:text-lg font-medium text-primary/65 max-w-2xl mx-auto">
                     Simple nutrition with quality ingredients, delivered fresh to your
                     doorstep.
                   </p>
@@ -584,7 +584,7 @@ export default function Index() {
                             {item.title}
                           </h3>
                         </div>
-                        <p className="font-body text-sm text-primary/55 leading-relaxed">
+                        <p className="font-body text-sm font-medium text-primary/60 leading-relaxed">
                           {item.description}
                         </p>
                       </div>
@@ -616,7 +616,7 @@ export default function Index() {
                   >
                     Grow With Us
                   </h2>
-                  <p className="font-body text-base sm:text-lg text-white/60 max-w-2xl mx-auto">
+                  <p className="font-body text-base sm:text-lg font-medium text-white/70 max-w-2xl mx-auto">
                     Join a team that's building something meaningful — fresh
                     innovation starts with passionate people.
                   </p>
@@ -649,7 +649,7 @@ export default function Index() {
                           <span className="font-body font-bold text-white text-base block">
                             {item.role}
                           </span>
-                          <span className="font-body text-xs text-white/40">
+                          <span className="font-body text-xs font-medium text-white/50">
                             {item.type} &middot; Kochi
                           </span>
                         </div>
@@ -662,7 +662,7 @@ export default function Index() {
 
               <FadeUp delay={0.4}>
                 <div className="text-center">
-                  <p className="font-body text-sm text-white/50 mb-6 max-w-xl mx-auto">
+                  <p className="font-body text-sm font-medium text-white/60 mb-6 max-w-xl mx-auto">
                     We're looking for driven individuals with 0–2 years of
                     experience. Bring your enthusiasm, strong communication skills,
                     and commitment to growing fresh innovation with us.
@@ -702,7 +702,7 @@ export default function Index() {
                   >
                     Stay in the Loop
                   </h2>
-                  <p className="font-body text-sm text-white/50">
+                  <p className="font-body text-sm font-medium text-white/55">
                     Be the first to know when we launch. No spam, ever.
                   </p>
                 </div>
@@ -759,7 +759,7 @@ export default function Index() {
                       Zipplit
                     </span>
                   </div>
-                  <p className="font-body text-sm text-white/40 leading-relaxed max-w-xs">
+                  <p className="font-body text-sm font-medium text-white/50 leading-relaxed max-w-xs">
                     Preservative-free meals made fresh daily in Kochi. Real food
                     for real people.
                   </p>
@@ -780,7 +780,7 @@ export default function Index() {
                         <a
                           href={`#${link.id}`}
                           onClick={(e) => { e.preventDefault(); scrollTo(link.id); }}
-                          className="font-body text-sm text-white/40 hover:text-secondary transition-colors"
+                          className="font-body text-sm font-medium text-white/50 hover:text-secondary transition-colors"
                           data-testid={`footer-link-${link.id}`}
                         >
                           {link.label}
@@ -813,16 +813,16 @@ export default function Index() {
                       </li>
                     ))}
                   </ul>
-                  <address className="not-italic flex items-center gap-2 text-white/30">
+                  <address className="not-italic flex items-center gap-2 text-white/40">
                     <MapPin className="w-3.5 h-3.5" aria-hidden="true" />
-                    <span className="font-body text-xs">Kochi, Kerala</span>
+                    <span className="font-body text-sm font-medium">Kochi, Kerala</span>
                   </address>
                 </div>
               </div>
 
               {/* Bottom bar */}
               <div className="pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row justify-between items-center gap-4">
-                <p className="font-body text-xs text-white/25">
+                <p className="font-body text-xs font-medium text-white/35">
                   &copy; {new Date().getFullYear()} Zipplit. All rights reserved.
                 </p>
                 <span className="font-brand text-xs font-bold text-secondary/60 tracking-wider uppercase">
