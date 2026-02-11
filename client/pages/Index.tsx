@@ -359,125 +359,68 @@ export default function Index() {
             Fresh, healthy meals delivered to your door without the hassle
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Solution 1 */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Solution 1: Subscription */}
             <div
-              className="group p-8 bg-gradient-to-br from-lime-50 to-white rounded-lg border-2 border-lime-200 hover:border-lime-500 hover:shadow-lg transition-all duration-300 animate-slide-up"
+              className="group p-8 bg-white border-2 border-lime-100 rounded-lg hover:border-lime-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-slide-up"
               style={{ animationDelay: "0.1s" }}
             >
-              <div className="flex items-start gap-4 mb-4">
-                <div className="p-3 bg-lime-100 rounded-full flex-shrink-0">
-                  <CheckCircle className="w-6 h-6 text-lime-600" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
-                    Preservative-Free
-                  </h3>
-                  <p className="text-sm text-gray-600 mt-1">
-                    100% fresh ingredients, no artificial additives or preservatives
-                  </p>
+              <div className="flex justify-center mb-6">
+                <div className="p-4 bg-lime-100 rounded-full group-hover:bg-lime-500 transition-colors duration-300">
+                  <Calendar className="w-8 h-8 text-teal-700 group-hover:text-white transition-colors duration-300" />
                 </div>
               </div>
+              <h3
+                className="text-xl font-bold text-teal-700 text-center mb-2"
+                style={{ fontFamily: "sans-serif" }}
+              >
+                Subscription
+              </h3>
+              <p className="text-gray-600 text-center text-sm">
+                Choose your preferred delivery schedule and meal options
+              </p>
             </div>
 
-            {/* Solution 2 */}
+            {/* Solution 2: Effortless */}
             <div
-              className="group p-8 bg-gradient-to-br from-lime-50 to-white rounded-lg border-2 border-lime-200 hover:border-lime-500 hover:shadow-lg transition-all duration-300 animate-slide-up"
+              className="group p-8 bg-white border-2 border-lime-100 rounded-lg hover:border-lime-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-slide-up"
               style={{ animationDelay: "0.2s" }}
             >
-              <div className="flex items-start gap-4 mb-4">
-                <div className="p-3 bg-lime-100 rounded-full flex-shrink-0">
-                  <Zap className="w-6 h-6 text-lime-600" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
-                    Lightning-Fast Delivery
-                  </h3>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Quick doorstep delivery in Kochi, ready to eat in minutes
-                  </p>
+              <div className="flex justify-center mb-6">
+                <div className="p-4 bg-lime-100 rounded-full group-hover:bg-lime-500 transition-colors duration-300">
+                  <Zap className="w-8 h-8 text-teal-700 group-hover:text-white transition-colors duration-300" />
                 </div>
               </div>
+              <h3
+                className="text-xl font-bold text-teal-700 text-center mb-2"
+                style={{ fontFamily: "sans-serif" }}
+              >
+                Effortless
+              </h3>
+              <p className="text-gray-600 text-center text-sm">
+                Fresh meals delivered quickly to your doorstep
+              </p>
             </div>
 
-            {/* Solution 3 */}
+            {/* Solution 3: Fresh and Healthy */}
             <div
-              className="group p-8 bg-gradient-to-br from-lime-50 to-white rounded-lg border-2 border-lime-200 hover:border-lime-500 hover:shadow-lg transition-all duration-300 animate-slide-up"
+              className="group p-8 bg-white border-2 border-lime-100 rounded-lg hover:border-lime-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-slide-up"
               style={{ animationDelay: "0.3s" }}
             >
-              <div className="flex items-start gap-4 mb-4">
-                <div className="p-3 bg-lime-100 rounded-full flex-shrink-0">
-                  <DollarSign className="w-6 h-6 text-lime-600" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
-                    Affordable Pricing
-                  </h3>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Premium quality at accessible prices for everyone
-                  </p>
+              <div className="flex justify-center mb-6">
+                <div className="p-4 bg-lime-100 rounded-full group-hover:bg-lime-500 transition-colors duration-300">
+                  <Leaf className="w-8 h-8 text-teal-700 group-hover:text-white transition-colors duration-300" />
                 </div>
               </div>
-            </div>
-
-            {/* Solution 4 */}
-            <div
-              className="group p-8 bg-gradient-to-br from-lime-50 to-white rounded-lg border-2 border-lime-200 hover:border-lime-500 hover:shadow-lg transition-all duration-300 animate-slide-up"
-              style={{ animationDelay: "0.4s" }}
-            >
-              <div className="flex items-start gap-4 mb-4">
-                <div className="p-3 bg-lime-100 rounded-full flex-shrink-0">
-                  <Utensils className="w-6 h-6 text-lime-600" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
-                    Customizable Meals
-                  </h3>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Choose your meals, frequency, and delivery schedule
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Solution 5 */}
-            <div
-              className="group p-8 bg-gradient-to-br from-lime-50 to-white rounded-lg border-2 border-lime-200 hover:border-lime-500 hover:shadow-lg transition-all duration-300 animate-slide-up"
-              style={{ animationDelay: "0.5s" }}
-            >
-              <div className="flex items-start gap-4 mb-4">
-                <div className="p-3 bg-lime-100 rounded-full flex-shrink-0">
-                  <Leaf className="w-6 h-6 text-lime-600" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
-                    Sustainable
-                  </h3>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Locally sourced, fresh ingredients supporting local farmers
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Solution 6 */}
-            <div
-              className="group p-8 bg-gradient-to-br from-lime-50 to-white rounded-lg border-2 border-lime-200 hover:border-lime-500 hover:shadow-lg transition-all duration-300 animate-slide-up"
-              style={{ animationDelay: "0.6s" }}
-            >
-              <div className="flex items-start gap-4 mb-4">
-                <div className="p-3 bg-lime-100 rounded-full flex-shrink-0">
-                  <Smile className="w-6 h-6 text-lime-600" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
-                    Peace of Mind
-                  </h3>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Trust us to deliver nutrition without compromise
-                  </p>
-                </div>
-              </div>
+              <h3
+                className="text-xl font-bold text-teal-700 text-center mb-2"
+                style={{ fontFamily: "sans-serif" }}
+              >
+                Fresh and Healthy
+              </h3>
+              <p className="text-gray-600 text-center text-sm">
+                preservative-free, made with fresh ingredients
+              </p>
             </div>
           </div>
         </div>
