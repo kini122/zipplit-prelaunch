@@ -306,13 +306,13 @@ export default function Index() {
         <div className="max-w-4xl mx-auto text-center">
           <h2
             className="text-3xl sm:text-4xl font-bold text-white mb-2 animate-fade-in"
-            style={{ fontFamily: "sans-serif", textShadow: "0 0 30px rgba(10, 72, 73, 0.8)" }}
+            style={{ fontFamily: "sans-serif" }}
           >
             Grow With Us
           </h2>
           <p
             className="text-lime-100 text-lg mb-8 animate-slide-up"
-            style={{ animationDelay: "0.1s", textShadow: "0 0 20px rgba(10, 72, 73, 0.6)" }}
+            style={{ animationDelay: "0.1s" }}
           >
             Join The Team
           </p>
