@@ -132,19 +132,20 @@ export default function Index() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden flex flex-col gap-1.5 p-2"
+            className="flex flex-col gap-1.5 p-2 md:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             data-testid="mobile-menu-toggle"
             aria-label="Toggle menu"
+            style={{ display: undefined }}
           >
             <span
-              className={`w-5 h-0.5 bg-primary transition-transform ${mobileMenuOpen ? "rotate-45 translate-y-2" : ""}`}
+              className={`block w-5 h-0.5 bg-primary transition-transform duration-200 ${mobileMenuOpen ? "rotate-45 translate-y-2" : ""}`}
             />
             <span
-              className={`w-5 h-0.5 bg-primary transition-opacity ${mobileMenuOpen ? "opacity-0" : ""}`}
+              className={`block w-5 h-0.5 bg-primary transition-opacity duration-200 ${mobileMenuOpen ? "opacity-0" : ""}`}
             />
             <span
-              className={`w-5 h-0.5 bg-primary transition-transform ${mobileMenuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+              className={`block w-5 h-0.5 bg-primary transition-transform duration-200 ${mobileMenuOpen ? "-rotate-45 -translate-y-2" : ""}`}
             />
           </button>
         </div>
