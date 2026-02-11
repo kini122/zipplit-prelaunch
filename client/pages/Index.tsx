@@ -350,7 +350,7 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-teal-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+      <footer className="text-white py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "rgba(10, 72, 73, 1)" }}>
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {/* Logo & Branding */}
@@ -363,7 +363,7 @@ export default function Index() {
                 />
                 <span className="text-lg font-bold">Zipplit</span>
               </div>
-              <p className="text-teal-200 text-sm">
+              <p className="text-sm text-center" style={{ color: "#9bcf55" }}>
                 Fresh. Healthy. Effortless.
               </p>
             </div>
