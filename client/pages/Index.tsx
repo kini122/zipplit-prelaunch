@@ -162,7 +162,7 @@ export default function Index() {
             text="Kochi loves to eat. But we lost time to cook. Preservatives and quick fixes became the norm—at the cost of our health. The truth is simple: fresh food changes everything."
             type="letter"
             textOpacity="soft"
-            className="text-4xl sm:text-5xl lg:text-6xl leading-relaxed justify-center gap-2"
+            className="text-4xl sm:text-5xl lg:text-6xl leading-tight justify-center gap-2"
             style={{ color: "rgb(6, 50, 55)" }}
           />
         </div>
