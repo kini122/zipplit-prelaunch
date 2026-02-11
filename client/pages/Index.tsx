@@ -54,20 +54,28 @@ export default function Index() {
           muted
           loop
           className="absolute inset-0 w-full h-full object-cover"
-          style={{ filter: "brightness(0.6)" }}
+          style={{ filter: "brightness(0.75)" }}
         >
           <source src="https://cdn.builder.io/o/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F2141fa4cf5dc490e87054929b1d70d5e?alt=media&token=4fb7e327-f2ce-4702-b074-ab13ebc41427&apiKey=2aea7158bf6b409ba9a64ab0f37870bb" type="video/mp4" />
         </video>
 
         {/* Tint Overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/25"></div>
 
         {/* Animated background pattern */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-10 right-10 w-72 h-72 bg-lime-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-subtle"></div>
+          <div className="absolute top-10 right-10 w-72 h-72 bg-lime-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-subtle"
+            style={{
+              animation: "pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+              boxShadow: "0 0 60px 30px rgba(155, 207, 85, 0.3)"
+            }}
+          ></div>
           <div
-            className="absolute bottom-10 left-10 w-72 h-72 bg-lime-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-subtle"
-            style={{ animationDelay: "2s" }}
+            className="absolute bottom-10 left-10 w-72 h-72 bg-lime-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-subtle"
+            style={{
+              animationDelay: "2s",
+              boxShadow: "0 0 60px 30px rgba(155, 207, 85, 0.2)"
+            }}
           ></div>
         </div>
 
@@ -75,12 +83,16 @@ export default function Index() {
           {/* Logo */}
           <div className="mb-8 animate-fade-in">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2Fa9e80778c13f44178a2402dbf635ec79?format=webp&width=800&height=1200"
+              src="https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F6994d8923852425c8cfa44070d4ac047?format=webp&width=800&height=1200"
               alt="Zipplit Logo"
-              className="w-40 h-40 sm:w-48 sm:h-48 mx-auto object-cover rounded-lg"
+              className="w-40 h-40 sm:w-48 sm:h-48 mx-auto object-cover rounded-lg animate-shimmer"
+              style={{
+                backgroundImage: "linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%)",
+                backgroundSize: "1000px 100%",
+              }}
             />
             <h2
-              className="text-3xl sm:text-4xl font-bold text-white mt-4"
+              className="text-3xl sm:text-4xl font-bold text-white mt-4 whitespace-nowrap overflow-hidden text-ellipsis"
               style={{ fontFamily: "sans-serif" }}
             >
               Zipplit
@@ -90,7 +102,11 @@ export default function Index() {
           {/* Main Headline */}
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 animate-slide-up"
-            style={{ animationDelay: "0.1s", fontFamily: "sans-serif" }}
+            style={{
+              animationDelay: "0.1s",
+              fontFamily: "sans-serif",
+              textShadow: "0 0 20px rgba(155, 207, 85, 0.4)"
+            }}
           >
             Fresh. Healthy. Effortless.
           </h1>
@@ -106,7 +122,10 @@ export default function Index() {
           {/* Launching Soon Text */}
           <p
             className="text-5xl sm:text-6xl lg:text-7xl font-bold text-lime-300 animate-pulse-subtle"
-            style={{ animationDelay: "0.3s" }}
+            style={{
+              animationDelay: "0.3s",
+              textShadow: "0 0 30px rgba(155, 207, 85, 0.6), 0 0 60px rgba(155, 207, 85, 0.3)"
+            }}
           >
             Launching Soon
           </p>
