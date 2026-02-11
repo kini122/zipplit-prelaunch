@@ -1,11 +1,6 @@
 import { useState } from "react";
 import {
-  Calendar,
-  Zap,
-  Leaf,
-  Heart,
-  Users,
-  Mail,
+  ChevronDown,
   Facebook,
   Instagram,
   Twitter,
@@ -13,14 +8,8 @@ import {
   TrendingUp,
   ClipboardList,
   Settings,
-  ChevronDown,
+  Heart,
   MapPin,
-  Clock,
-  AlertCircle,
-  DollarSign,
-  CheckCircle,
-  Utensils,
-  Smile,
 } from "lucide-react";
 
 export default function Index() {
@@ -36,25 +25,15 @@ export default function Index() {
     }
   };
 
-  const scrollToWhatWeDo = () => {
-    const element = document.getElementById("what-we-do");
+  const scrollToContent = () => {
+    const element = document.getElementById("content-section");
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div
-      className="w-full overflow-hidden bg-white"
-      style={{
-        backgroundImage:
-          "url(https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2Fa60b8421277f4b9f9027148a9bdfaa03)",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-      }}
-    >
+    <div className="w-full overflow-hidden bg-white">
       {/* Hero Section */}
       <section className="relative min-h-screen pt-20 px-4 sm:px-6 lg:px-8 flex items-center justify-center overflow-hidden">
-        {/* Video Background */}
         <video
           autoPlay
           muted
@@ -65,10 +44,8 @@ export default function Index() {
           <source src="https://cdn.builder.io/o/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F2141fa4cf5dc490e87054929b1d70d5e?alt=media&token=4fb7e327-f2ce-4702-b074-ab13ebc41427&apiKey=2aea7158bf6b409ba9a64ab0f37870bb" type="video/mp4" />
         </video>
 
-        {/* Tint Overlay */}
         <div className="absolute inset-0 bg-black/25"></div>
 
-        {/* Animated background pattern */}
         <div className="absolute inset-0 overflow-hidden">
           <div
             className="absolute bottom-10 left-10 w-72 h-72 bg-lime-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-subtle"
@@ -80,16 +57,11 @@ export default function Index() {
         </div>
 
         <div className="relative z-10 w-full max-w-4xl mx-auto text-center">
-          {/* Logo */}
           <div className="mb-8 animate-fade-in">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F6994d8923852425c8cfa44070d4ac047?format=webp&width=800&height=1200"
               alt="Zipplit Logo"
               className="w-40 h-40 sm:w-48 sm:h-48 mx-auto object-cover rounded-lg animate-shimmer"
-              style={{
-                backgroundImage: "linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%)",
-                backgroundSize: "1000px 100%",
-              }}
             />
             <h2
               className="text-3xl sm:text-4xl font-bold text-white mt-4 whitespace-nowrap overflow-hidden text-ellipsis"
@@ -99,7 +71,6 @@ export default function Index() {
             </h2>
           </div>
 
-          {/* Main Headline */}
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 animate-slide-up"
             style={{
@@ -111,7 +82,6 @@ export default function Index() {
             Fresh. Healthy. Effortless.
           </h1>
 
-          {/* Subheadline */}
           <p
             className="text-lg sm:text-xl text-lime-100 mb-4 animate-slide-up"
             style={{ animationDelay: "0.2s" }}
@@ -119,7 +89,6 @@ export default function Index() {
             Preservative-Free Meals in Kochi
           </p>
 
-          {/* Launching Soon Text */}
           <p
             className="text-5xl sm:text-6xl lg:text-7xl font-bold text-lime-300 animate-pulse-subtle"
             style={{
@@ -130,11 +99,10 @@ export default function Index() {
             Launching Soon
           </p>
 
-          {/* Know More Arrow */}
           <button
-            onClick={scrollToWhatWeDo}
+            onClick={scrollToContent}
             className="mt-12 mx-auto block animate-bounce"
-            aria-label="Scroll to What We Do"
+            aria-label="Scroll to content"
           >
             <ChevronDown className="w-8 h-8 text-white" />
           </button>
@@ -142,143 +110,180 @@ export default function Index() {
       </section>
 
       {/* Who It's For Section */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+      <section id="content-section" className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2
-            className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-12 animate-fade-in"
-            style={{ fontFamily: "sans-serif" }}
-          >
-            Who It's For
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {[
-              {
-                title: "Working Professionals",
-                description:
-                  "Skip the lunch rush. Nutritious meals delivered to your office",
-                Icon: Briefcase,
-              },
-              {
-                title: "Frequent Travelers",
-                description: "Good food on the go.",
-                Icon: MapPin,
-              },
-              {
-                title: "Busy Families and Couples",
-                description: "Spend more time together, less time cooking",
-                Icon: Heart,
-              },
-            ].map((profile, idx) => (
-              <div
-                key={idx}
-                className="flex flex-col items-center text-center animate-slide-up"
-                style={{ animationDelay: `${idx * 0.15}s` }}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
+            {/* Left Column - Text */}
+            <div className="flex flex-col justify-center">
+              <h2
+                className="text-4xl sm:text-5xl font-bold text-teal-700 mb-8 animate-fade-in"
+                style={{ fontFamily: "sans-serif" }}
               >
-                <div className="mb-6">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-lime-100 text-teal-700 hover:bg-lime-500 hover:text-white transition-colors duration-300">
-                    <profile.Icon className="w-8 h-8" />
+                Who It's For
+              </h2>
+              
+              <div className="space-y-10">
+                {[
+                  {
+                    title: "Working Professionals",
+                    description: "Skip the lunch rush. Nutritious meals delivered to your office",
+                    Icon: Briefcase,
+                  },
+                  {
+                    title: "Frequent Travelers",
+                    description: "Good food on the go.",
+                    Icon: MapPin,
+                  },
+                  {
+                    title: "Busy Families and Couples",
+                    description: "Spend more time together, less time cooking",
+                    Icon: Heart,
+                  },
+                ].map((profile, idx) => (
+                  <div
+                    key={idx}
+                    className="flex gap-4 animate-slide-up"
+                    style={{ animationDelay: `${idx * 0.15}s` }}
+                  >
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-full bg-lime-100">
+                        <profile.Icon className="h-6 w-6 text-teal-700" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
+                        {profile.title}
+                      </h3>
+                      <p className="text-gray-600 text-sm mt-1">{profile.description}</p>
+                    </div>
                   </div>
-                </div>
-                <h3
-                  className="text-xl font-bold text-teal-700 mb-3"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  {profile.title}
-                </h3>
-                <p className="text-gray-600 text-sm max-w-xs">
-                  {profile.description}
-                </p>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* Right Column - Images */}
+            <div className="relative h-96 sm:h-[600px] lg:h-[700px]">
+              <div className="absolute inset-0 grid grid-cols-2 gap-4">
+                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-lime-100 to-teal-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=500&fit=crop"
+                    alt="Healthy meal bowl"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-teal-100 to-lime-100 mt-8">
+                  <img
+                    src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=500&fit=crop"
+                    alt="Fresh vegetables"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-lime-100 to-teal-100 mt-8">
+                  <img
+                    src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&h=500&fit=crop"
+                    alt="Protein-rich meal"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-teal-100 to-lime-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&h=500&fit=crop"
+                    alt="Fresh salmon dish"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-
-      {/* The Solution Section */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "#e8f5d6" }}>
+      {/* How Zipplit Does It Section */}
+      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "#e8f5d6" }}>
         <div className="max-w-6xl mx-auto">
-          <h2
-            className="text-3xl sm:text-4xl font-bold text-teal-700 text-center mb-4 animate-fade-in"
-            style={{ fontFamily: "sans-serif" }}
-          >
-            How Zipplit Does It
-          </h2>
-          <p className="text-gray-600 text-center mb-12 text-lg max-w-3xl mx-auto">
-            Fresh, healthy meals delivered to your door without the hassle
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Solution 1: Subscription */}
-            <div
-              className="group p-8 bg-white border-2 border-lime-100 rounded-lg hover:border-lime-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-slide-up"
-              style={{ animationDelay: "0.1s" }}
-            >
-              <div className="flex justify-center mb-6">
-                <div className="p-4 rounded-full group-hover:bg-lime-500 transition-colors duration-300" style={{ backgroundColor: "#e8f5d6" }}>
-                  <Calendar className="w-8 h-8 text-teal-700 group-hover:text-white transition-colors duration-300" />
-                </div>
-              </div>
-              <h3
-                className="text-xl font-bold text-teal-700 text-center mb-2"
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
+            {/* Left Column - Text */}
+            <div className="flex flex-col justify-center order-2 lg:order-1">
+              <h2
+                className="text-4xl sm:text-5xl font-bold text-teal-700 mb-8 animate-fade-in"
                 style={{ fontFamily: "sans-serif" }}
               >
-                Subscription
-              </h3>
-              <p className="text-gray-600 text-center text-sm">
-                Choose your preferred delivery schedule and meal options
+                How Zipplit Does It
+              </h2>
+              
+              <p className="text-gray-600 mb-8 text-lg">
+                Fresh, healthy meals delivered to your door without the hassle. We believe in simple nutrition with quality ingredients.
               </p>
+
+              <div className="space-y-8">
+                {[
+                  {
+                    title: "Subscription",
+                    description: "Choose your preferred delivery schedule and meal options",
+                  },
+                  {
+                    title: "Effortless",
+                    description: "Fresh meals delivered quickly to your doorstep",
+                  },
+                  {
+                    title: "Fresh and Healthy",
+                    description: "Preservative-free, made with fresh ingredients",
+                  },
+                ].map((item, idx) => (
+                  <div
+                    key={idx}
+                    className="pb-8 border-b border-teal-200 last:border-b-0 animate-slide-up"
+                    style={{ animationDelay: `${idx * 0.15}s` }}
+                  >
+                    <h3 className="text-xl font-bold text-teal-700 mb-2" style={{ fontFamily: "sans-serif" }}>
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600">{item.description}</p>
+                  </div>
+                ))}
+              </div>
             </div>
 
-            {/* Solution 2: Effortless */}
-            <div
-              className="group p-8 bg-white border-2 border-lime-100 rounded-lg hover:border-lime-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-slide-up"
-              style={{ animationDelay: "0.2s" }}
-            >
-              <div className="flex justify-center mb-6">
-                <div className="p-4 rounded-full group-hover:bg-lime-500 transition-colors duration-300" style={{ backgroundColor: "#e8f5d6" }}>
-                  <Zap className="w-8 h-8 text-teal-700 group-hover:text-white transition-colors duration-300" />
+            {/* Right Column - Images */}
+            <div className="relative h-96 sm:h-[600px] lg:h-[700px] order-1 lg:order-2">
+              <div className="absolute inset-0 grid grid-cols-2 gap-4">
+                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-lime-100 to-white">
+                  <img
+                    src="https://images.unsplash.com/photo-1484723969409-c5140716266d?w=400&h=500&fit=crop"
+                    alt="Meal prep"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-white to-lime-100 mt-8">
+                  <img
+                    src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=500&fit=crop"
+                    alt="Fresh ingredients"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-lime-100 to-white mt-8">
+                  <img
+                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=500&fit=crop"
+                    alt="Healthy delivery"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-white to-lime-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&h=500&fit=crop"
+                    alt="Nutritious meal"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
-              <h3
-                className="text-xl font-bold text-teal-700 text-center mb-2"
-                style={{ fontFamily: "sans-serif" }}
-              >
-                Effortless
-              </h3>
-              <p className="text-gray-600 text-center text-sm">
-                Fresh meals delivered quickly to your doorstep
-              </p>
-            </div>
-
-            {/* Solution 3: Fresh and Healthy */}
-            <div
-              className="group p-8 bg-white border-2 border-lime-100 rounded-lg hover:border-lime-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-slide-up"
-              style={{ animationDelay: "0.3s" }}
-            >
-              <div className="flex justify-center mb-6">
-                <div className="p-4 rounded-full group-hover:bg-lime-500 transition-colors duration-300" style={{ backgroundColor: "#e8f5d6" }}>
-                  <Leaf className="w-8 h-8 text-teal-700 group-hover:text-white transition-colors duration-300" />
-                </div>
-              </div>
-              <h3
-                className="text-xl font-bold text-teal-700 text-center mb-2"
-                style={{ fontFamily: "sans-serif" }}
-              >
-                Fresh and Healthy
-              </h3>
-              <p className="text-gray-600 text-center text-sm">
-                preservative-free, made with fresh ingredients
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Join Our Team Section */}
+      {/* Grow With Us Section */}
       <section
-        className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8"
+        className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8"
         style={{
           backgroundImage:
             "url(https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F7fd40f81982c4ab4ad96ca42309f6b0b)",
@@ -349,7 +354,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Newsletter & Footer */}
       <footer className="text-white py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "rgba(10, 72, 73, 1)" }}>
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
