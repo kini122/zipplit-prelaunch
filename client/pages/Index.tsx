@@ -595,6 +595,95 @@ export default function Index() {
             </div>
           </section>
 
+          {/* ═══════════ WHAT WE'RE COOKING — GALLERY ═══════════ */}
+          <section
+            id="gallery"
+            className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden"
+            aria-labelledby="gallery-heading"
+            data-testid="gallery-section"
+          >
+            <div className="max-w-7xl mx-auto">
+              <FadeUp>
+                <div className="text-center mb-14">
+                  <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/15 text-primary font-body text-xs font-bold tracking-wider uppercase mb-6">
+                    <Leaf className="w-3.5 h-3.5" aria-hidden="true" />
+                    Taste Kerala
+                  </span>
+                  <h2
+                    id="gallery-heading"
+                    className="font-heading text-primary tracking-tight mb-4"
+                    style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}
+                    data-testid="gallery-heading"
+                  >
+                    What We're Cooking
+                  </h2>
+                  <p className="font-body text-base sm:text-lg font-medium text-primary/65 max-w-2xl mx-auto">
+                    From traditional Kerala meal kits to fresh bakery delights and cool beverages — a sneak peek at what's on the menu.
+                  </p>
+                </div>
+              </FadeUp>
+
+              {/* Masonry-style gallery */}
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5">
+                {[
+                  {
+                    src: "https://customer-assets.emergentagent.com/job_zipplit-preview/artifacts/helcvbmz_zip%20post1.png",
+                    alt: "Taste Kerala At Home — Easy ready-to-cook meal kits with authentic Kerala cuisine",
+                    tall: true,
+                  },
+                  {
+                    src: "https://customer-assets.emergentagent.com/job_zipplit-preview/artifacts/27dsh75x_zip%20post2.png",
+                    alt: "Traditional Kerala thali meal kit with idli, sambar, chutney, and chai",
+                    tall: false,
+                  },
+                  {
+                    src: "https://customer-assets.emergentagent.com/job_zipplit-preview/artifacts/6nl0d6co_zip%20post3.png",
+                    alt: "Your daily fresh and frozen seafood stop — super-fast delivery within 2 hours",
+                    tall: false,
+                  },
+                  {
+                    src: "https://customer-assets.emergentagent.com/job_zipplit-preview/artifacts/6l26pyai_zip%20post4.png",
+                    alt: "Fresh bakery delights baked daily — soft, fluffy, and perfectly baked",
+                    tall: false,
+                  },
+                  {
+                    src: "https://customer-assets.emergentagent.com/job_zipplit-preview/artifacts/w1jdyi9v_zip%20post6.png",
+                    alt: "Cool drinks for every mood — refreshing fruit-infused beverages delivered",
+                    tall: true,
+                  },
+                ].map((img, idx) => (
+                  <FadeUp
+                    key={idx}
+                    delay={idx * 0.08}
+                    className={idx === 0 ? "row-span-2" : idx === 4 ? "row-span-2" : ""}
+                  >
+                    <motion.div
+                      whileHover={prefersReduced ? {} : { scale: 1.03 }}
+                      transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+                      className="relative group rounded-2xl overflow-hidden h-full cursor-pointer"
+                      data-testid={`gallery-item-${idx}`}
+                    >
+                      <img
+                        src={img.src}
+                        alt={img.alt}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy"
+                        width={400}
+                        height={img.tall ? 800 : 400}
+                      />
+                      {/* Hover overlay */}
+                      <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/30 transition-colors duration-300 flex items-end p-5" aria-hidden="true">
+                        <span className="font-body text-sm font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+                          {img.alt.split("—")[0].trim()}
+                        </span>
+                      </div>
+                    </motion.div>
+                  </FadeUp>
+                ))}
+              </div>
+            </div>
+          </section>
+
           {/* ═══════════ GROW WITH US — CAREERS ═══════════ */}
           <section
             id="careers"
