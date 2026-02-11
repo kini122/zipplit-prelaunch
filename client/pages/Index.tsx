@@ -115,7 +115,7 @@ export default function Index() {
               animationDelay: "0.1s",
               fontFamily: "sans-serif",
               textShadow: "0 0 20px rgba(155, 207, 85, 0.4)",
-              fontSize: "clamp(57.6px, 9vw, 96px)"
+              fontSize: "clamp(46.08px, 7.2vw, 76.8px)"
             }}
           >
             Fresh. Healthy. Effortless.
