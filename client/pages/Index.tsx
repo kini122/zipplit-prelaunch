@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 import { TextGradientScroll } from "@/components/ui/text-gradient-scroll";
+import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 
 export default function Index() {
   const [email, setEmail] = useState("");
@@ -173,56 +174,50 @@ export default function Index() {
             Who It's For
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {[
+          <StickyScroll
+            content={[
               {
                 title: "Working Professionals",
-                description: "Skip the lunch rush. Nutritious meals delivered to your office",
-                Icon: Briefcase,
-                image: "https://images.unsplash.com/photo-1585238341710-4913d3ca7b0f?w=400&h=300&fit=crop",
+                description: "Skip the lunch rush. Nutritious meals delivered to your office. Stay healthy and energized throughout your workday without worrying about meal prep.",
+                content: (
+                  <div className="h-full w-full bg-gradient-to-br from-teal-500 to-lime-500 flex items-center justify-center text-white overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1585238341710-4913d3ca7b0f?w=400&h=300&fit=crop"
+                      alt="Working Professionals"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ),
               },
               {
                 title: "Frequent Travelers",
-                description: "Good food on the go.",
-                Icon: MapPin,
-                image: "https://images.unsplash.com/photo-1504674900600-f032a568e944?w=400&h=300&fit=crop",
+                description: "Good food on the go. Whether you're traveling for work or pleasure, take fresh, healthy meals with you. No more airport fast food.",
+                content: (
+                  <div className="h-full w-full bg-gradient-to-br from-teal-500 to-lime-500 flex items-center justify-center text-white overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1504674900600-f032a568e944?w=400&h=300&fit=crop"
+                      alt="Frequent Travelers"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ),
               },
               {
                 title: "Busy Families and Couples",
-                description: "Spend more time together, less time cooking",
-                Icon: Heart,
-                image: "https://images.unsplash.com/photo-1543521521-2a1a0d5d5f8f?w=400&h=300&fit=crop",
-              },
-            ].map((profile, idx) => (
-              <div
-                key={idx}
-                className="scroll-card group bg-white border-2 border-teal-100 rounded-lg overflow-hidden hover:border-lime-500 hover:shadow-xl transition-all duration-300 opacity-0 translate-y-8"
-                style={{ transitionProperty: "opacity, transform, border-color, box-shadow" }}
-              >
-                {/* Image */}
-                <div className="relative h-48 sm:h-56 overflow-hidden bg-gradient-to-br from-lime-100 to-teal-100">
-                  <img
-                    src={profile.image}
-                    alt={profile.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="p-6">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="flex items-center justify-center h-10 w-10 rounded-full bg-lime-100 group-hover:bg-lime-500 transition-colors duration-300">
-                      <profile.Icon className="h-5 w-5 text-teal-700 group-hover:text-white transition-colors duration-300" />
-                    </div>
-                    <h3 className="text-lg font-bold text-teal-700" style={{ fontFamily: "sans-serif" }}>
-                      {profile.title}
-                    </h3>
+                description: "Spend more time together, less time cooking. Let us handle the meal prep so you can focus on what matters—quality time with loved ones.",
+                content: (
+                  <div className="h-full w-full bg-gradient-to-br from-teal-500 to-lime-500 flex items-center justify-center text-white overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1543521521-2a1a0d5d5f8f?w=400&h=300&fit=crop"
+                      alt="Busy Families and Couples"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <p className="text-gray-600 text-sm">{profile.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+                ),
+              },
+            ]}
+            contentClassName="bg-white"
+          />
         </div>
       </section>
 
