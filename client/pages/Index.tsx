@@ -185,19 +185,8 @@ export default function Index() {
                 title: "Working Professionals",
                 description: "Skip the lunch rush. Nutritious meals delivered to your office. Stay healthy and energized throughout your workday without worrying about meal prep.",
                 content: (
-                  <div className="h-full w-full bg-gradient-to-br from-teal-500 to-lime-500 flex items-center justify-center text-white overflow-hidden relative">
-                    <img
-                      src="https://images.unsplash.com/photo-1585238341710-4913d3ca7b0f?w=400&h=300&fit=crop"
-                      alt="Working Professionals"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute top-6 left-6 bg-white/95 rounded-full p-4 shadow-lg">
-                      <Briefcase className="w-8 h-8 text-teal-700" />
-                    </div>
-                    <div className="absolute bottom-6 right-6 bg-white/95 rounded-full p-4 shadow-lg">
-                      <Clock className="w-8 h-8 text-teal-700" />
-                    </div>
-                  </div>
+                  <>
+                  </>
                 ),
               },
               {
