@@ -14,8 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Fraunces", "serif"],
+        heading: ["DM Serif Display", "serif"],
         body: ["Nunito", "sans-serif"],
+        brand: ["Nunito", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
