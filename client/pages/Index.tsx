@@ -144,11 +144,11 @@ export default function Index() {
       </section>
 
       {/* Fresh Food First Section */}
-      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8 bg-black">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "rgba(155, 207, 85, 1)" }}>
+        <div className="max-w-5xl mx-auto text-center">
           <h2
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-8"
-            style={{ fontFamily: "sans-serif", fontWeight: "600" }}
+            className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-12"
+            style={{ fontFamily: "sans-serif", fontWeight: "700", color: "rgb(6, 50, 55)" }}
           >
             Fresh Food First
           </h2>
@@ -157,7 +157,8 @@ export default function Index() {
             text="Kochi loves to eat. But we lost time to cook. Preservatives and quick fixes became the norm—at the cost of our health. The truth is simple: fresh food changes everything."
             type="letter"
             textOpacity="soft"
-            className="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed justify-center"
+            className="text-4xl sm:text-5xl lg:text-6xl leading-relaxed justify-center gap-2"
+            style={{ color: "rgb(6, 50, 55)" }}
           />
         </div>
       </section>
