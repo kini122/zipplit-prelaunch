@@ -393,9 +393,9 @@ export default function Index() {
               <FadeUp delay={0.35}>
                 <ul className="mt-14 flex flex-wrap justify-center gap-4 sm:gap-6 list-none p-0" role="list" aria-label="Our commitments">
                   {[
-                    "Zero Preservatives",
-                    "Locally Sourced",
-                    "Cooked Daily",
+                    "Subscriptions",
+                    "Effortless",
+                    "Healthy & Nutritious",
                   ].map((tag) => (
                     <li
                       key={tag}
@@ -525,7 +525,7 @@ export default function Index() {
                     step: "01",
                     title: "Source Fresh",
                     description:
-                      "We partner with local farmers and suppliers to source the freshest seasonal ingredients — no frozen bases, no shortcuts.",
+                      "Choose your subscription plan and let us handle the rest. We partner with local farmers to source the freshest seasonal ingredients — delivered directly to you.",
                     image:
                       "https://cdn.builder.io/api/v1/image/assets%2F31e04bb0599342f8b50394d1e8bce657%2Fe5dd7742e9e5448fa4e4ccb226bf0476",
                     imageAlt: "A calendar showing meal planning and fresh ingredient scheduling",
@@ -533,9 +533,9 @@ export default function Index() {
                   {
                     icon: ChefHat,
                     step: "02",
-                    title: "Cook Daily",
+                    title: "Effortless",
                     description:
-                      "Every meal is prepared fresh each day in our kitchen. No preservatives, no reheated leftovers — just honest cooking.",
+                      "Your meals are prepared fresh and delivered warm to your doorstep. Easily enjoy restaurant-quality food without any cooking hassle or prep time.",
                     image:
                       "https://cdn.builder.io/api/v1/image/assets%2F31e04bb0599342f8b50394d1e8bce657%2Ff7acb3864c364de58ac819bb67461d30",
                     imageAlt: "A delivery person carrying freshly prepared meal packages",
@@ -543,9 +543,9 @@ export default function Index() {
                   {
                     icon: Truck,
                     step: "03",
-                    title: "Deliver Warm",
+                    title: "Healthy & Nutritious",
                     description:
-                      "Your meals arrive at your doorstep warm and ready to eat. Choose your schedule, and we'll take care of the rest.",
+                      "Every meal is crafted with zero preservatives and real, wholesome ingredients. Enjoy genuine nutrition without any artificial additives or chemicals.",
                     image:
                       "https://cdn.builder.io/api/v1/image/assets%2F31e04bb0599342f8b50394d1e8bce657%2F54949c5215bb4676b42b53329bb9407d",
                     imageAlt: "A warm, freshly prepared healthy meal plated and ready to eat",
