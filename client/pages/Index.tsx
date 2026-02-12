@@ -267,11 +267,12 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F31e04bb0599342f8b50394d1e8bce657%2F44c8d660d3594781a246b393dfe14b57?format=webp&width=800&height=1200"
                   alt="Zipplit brand mark"
-                  className="w-24 h-24 sm:w-28 sm:h-28 mx-auto object-cover rounded-2xl mb-8"
+                  className="w-24 h-24 sm:w-28 sm:h-28 mx-auto object-cover rounded-2xl mb-3"
                   width={112}
                   height={112}
                   data-testid="hero-logo"
                 />
+                <p className="font-brand text-xl font-extrabold text-white text-center">zipplit</p>
               </motion.div>
 
               <motion.h1
