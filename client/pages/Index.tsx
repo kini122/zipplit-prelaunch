@@ -17,6 +17,9 @@ import {
   Facebook,
   Twitter,
   MapPin,
+  Clock,
+  Heart,
+  Calendar,
 } from "lucide-react";
 
 /* ─── Reusable animated wrapper (respects reduced motion) ─── */
@@ -291,7 +294,7 @@ export default function Index() {
               >
                 Kochi's first 100% preservative-free meal subscription.
                 <br className="hidden sm:block" />
-                Fresh ingredients, cooked daily, delivered to your door.
+                Fresh ingredients, delivered to your door.
               </motion.p>
 
               <motion.div
@@ -521,9 +524,9 @@ export default function Index() {
               <ol className="grid grid-cols-1 md:grid-cols-3 gap-6 list-none p-0" role="list">
                 {[
                   {
-                    icon: Leaf,
+                    icon: Calendar,
                     step: "01",
-                    title: "Source Fresh",
+                    title: "Subscriptions",
                     description:
                       "Choose your subscription plan and let us handle the rest. We partner with local farmers to source the freshest seasonal ingredients — delivered directly to you.",
                     image:
@@ -531,7 +534,7 @@ export default function Index() {
                     imageAlt: "A calendar showing meal planning and fresh ingredient scheduling",
                   },
                   {
-                    icon: ChefHat,
+                    icon: Clock,
                     step: "02",
                     title: "Effortless",
                     description:
@@ -541,7 +544,7 @@ export default function Index() {
                     imageAlt: "A delivery person carrying freshly prepared meal packages",
                   },
                   {
-                    icon: Truck,
+                    icon: Heart,
                     step: "03",
                     title: "Healthy & Nutritious",
                     description:
