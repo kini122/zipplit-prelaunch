@@ -528,7 +528,7 @@ export default function Index() {
                     step: "01",
                     title: "Subscriptions",
                     description:
-                      "We provide flexible subscription plans that best suit your needs and we manage it well.",
+                      "Select the plan that fits your lifestyle and let us handle everything else.",
                     image:
                       "https://cdn.builder.io/api/v1/image/assets%2F31e04bb0599342f8b50394d1e8bce657%2Fe5dd7742e9e5448fa4e4ccb226bf0476",
                     imageAlt: "A calendar showing meal planning and fresh ingredient scheduling",
