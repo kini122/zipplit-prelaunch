@@ -787,7 +787,7 @@ export default function Index() {
           >
             <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 sm:py-20">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
-                <div>
+                <div className="text-center lg:text-left">
                   <h2
                     id="newsletter-heading"
                     className="font-heading text-2xl sm:text-3xl text-white mb-2"
@@ -802,7 +802,7 @@ export default function Index() {
 
                 <form
                   onSubmit={handleSignup}
-                  className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto"
+                  className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto mx-auto lg:mx-0"
                   data-testid="newsletter-form"
                   aria-label="Newsletter signup"
                 >
@@ -836,10 +836,10 @@ export default function Index() {
           {/* Footer bottom */}
           <div className="border-t border-white/[0.08]">
             <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10 text-center md:text-left">
                 {/* Brand */}
-                <div>
-                  <div className="flex items-center gap-2.5 mb-4">
+                <div className="md:text-left">
+                  <div className="flex items-center gap-2.5 mb-4 justify-center md:justify-start">
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets%2F31e04bb0599342f8b50394d1e8bce657%2F2a7734eba886453c979a516fa95323f4?format=webp&width=800&height=1200"
                       alt=""
@@ -859,11 +859,11 @@ export default function Index() {
                 </div>
 
                 {/* Quick links */}
-                <nav aria-label="Footer navigation">
+                <nav aria-label="Footer navigation" className="md:text-left">
                   <h3 className="font-body font-bold text-white/80 text-sm uppercase tracking-wider mb-4">
                     Quick Links
                   </h3>
-                  <ul className="flex flex-col gap-2.5 list-none p-0">
+                  <ul className="flex flex-col gap-2.5 list-none p-0 items-center md:items-start">
                     {[
                       { label: "About", id: "manifesto" },
                       { label: "How It Works", id: "how-it-works" },
@@ -884,11 +884,11 @@ export default function Index() {
                 </nav>
 
                 {/* Social */}
-                <div>
+                <div className="md:text-left">
                   <h3 className="font-body font-bold text-white/80 text-sm uppercase tracking-wider mb-4">
                     Connect
                   </h3>
-                  <ul className="flex gap-3 mb-4 list-none p-0" aria-label="Social media links">
+                  <ul className="flex gap-3 mb-4 list-none p-0 justify-center md:justify-start" aria-label="Social media links">
                     {[
                       { Icon: Instagram, label: "Follow us on Instagram" },
                       { Icon: Facebook, label: "Follow us on Facebook" },
@@ -906,7 +906,7 @@ export default function Index() {
                       </li>
                     ))}
                   </ul>
-                  <address className="not-italic flex items-center gap-2 text-white/40">
+                  <address className="not-italic flex items-center gap-2 text-white/40 justify-center md:justify-start">
                     <MapPin className="w-3.5 h-3.5" aria-hidden="true" />
                     <span className="font-body text-sm font-medium">Kochi, Kerala</span>
                   </address>
@@ -914,11 +914,11 @@ export default function Index() {
               </div>
 
               {/* Bottom bar */}
-              <div className="pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row justify-between items-center gap-4">
-                <p className="font-body text-xs font-medium text-white/35">
+              <div className="pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 text-center sm:text-left">
+                <p className="font-body text-xs font-medium text-white/35 order-2 sm:order-1">
                   &copy; {new Date().getFullYear()} Zipplit. All rights reserved.
                 </p>
-                <span className="font-brand text-xs font-bold text-secondary/60 tracking-wider uppercase">
+                <span className="font-brand text-xs font-bold text-secondary/60 tracking-wider uppercase order-1 sm:order-2">
                   Launching Soon
                 </span>
               </div>
