@@ -272,7 +272,7 @@ export default function Index() {
                   height={112}
                   data-testid="hero-logo"
                 />
-                <p className="font-brand text-xl font-extrabold text-white text-center">zipplit</p>
+                <p className="font-brand text-2xl font-extrabold text-white text-center">zipplit</p>
               </motion.div>
 
               <motion.h1
