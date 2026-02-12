@@ -528,7 +528,7 @@ export default function Index() {
                     step: "01",
                     title: "Subscriptions",
                     description:
-                      "Choose your subscription plan and let us handle the rest. We partner with local farmers to source the freshest seasonal ingredients — delivered directly to you.",
+                      "We provide flexible subscription plans that best suit your needs and we manage it well.",
                     image:
                       "https://cdn.builder.io/api/v1/image/assets%2F31e04bb0599342f8b50394d1e8bce657%2Fe5dd7742e9e5448fa4e4ccb226bf0476",
                     imageAlt: "A calendar showing meal planning and fresh ingredient scheduling",
@@ -538,7 +538,7 @@ export default function Index() {
                     step: "02",
                     title: "Effortless",
                     description:
-                      "Your meals are prepared fresh and delivered warm to your doorstep. Easily enjoy restaurant-quality food without any cooking hassle or prep time.",
+                      "Your meals are delivered warm to your doorstep. Easily enjoy quality food without any cooking hassle or prep time.",
                     image:
                       "https://cdn.builder.io/api/v1/image/assets%2F31e04bb0599342f8b50394d1e8bce657%2Ff7acb3864c364de58ac819bb67461d30",
                     imageAlt: "A delivery person carrying freshly prepared meal packages",
