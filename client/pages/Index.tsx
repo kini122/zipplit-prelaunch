@@ -622,7 +622,7 @@ export default function Index() {
                     What We're Cooking
                   </h2>
                   <p className="font-body text-base sm:text-lg font-medium text-primary/65 max-w-2xl mx-auto">
-                    From traditional Kerala meal kits to fresh bakery delights and cool beverages — a sneak peek at what's on the menu.
+                    From traditional Kerala meal kits to fresh, ready-to-enjoy meals — a sneak peek at what's on the menu.
                   </p>
                 </div>
               </FadeUp>
