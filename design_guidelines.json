@@ -1,0 +1,161 @@
+{
+  "project_metadata": {
+    "name": "Zipplit - Preservative-Free Meal Delivery",
+    "type": "Landing Page (Pre-launch)",
+    "context": "Coming Soon / Hiring Credibility",
+    "target_audience": "Potential Employees (Primary), Future Customers (Secondary)",
+    "tone": "Fresh, Honest, Energetic, Professional",
+    "file_structure": {
+      "root": "/app",
+      "client": "/app/client",
+      "components": "/app/client/components/ui",
+      "pages": "/app/client/pages",
+      "css": "/app/client/global.css",
+      "tailwind": "/app/tailwind.config.ts"
+    }
+  },
+  "design_system": {
+    "typography": {
+      "heading_font": {
+        "name": "Fraunces",
+        "fallback": "serif",
+        "url": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;400;600;700&display=swap",
+        "usage": "Use for all H1-H3 headings. Editorial, warm, authoritative yet organic."
+      },
+      "body_font": {
+        "name": "Nunito",
+        "fallback": "sans-serif",
+        "url": "https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap",
+        "usage": "Use for body text, UI elements, and labels. Clean, rounded, friendly."
+      },
+      "rules": {
+        "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] text-primary-900",
+        "h2": "text-4xl md:text-5xl font-semibold tracking-tight leading-tight",
+        "h3": "text-2xl md:text-3xl font-medium",
+        "body": "text-base md:text-lg leading-relaxed text-gray-700",
+        "cta": "font-bold tracking-wide uppercase text-sm"
+      }
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#0A4849",
+          "foreground": "#FFFFFF",
+          "hover": "#0D5F60"
+        },
+        "secondary": {
+          "DEFAULT": "#9BCF55",
+          "foreground": "#0A4849",
+          "hover": "#8AB84A"
+        },
+        "accent": {
+          "DEFAULT": "#F4F1EA",
+          "foreground": "#0A4849"
+        },
+        "background": "#FFFFFF",
+        "surface": "#F8FAF8",
+        "text": {
+          "primary": "#0A4849",
+          "secondary": "#333333",
+          "muted": "#5B5B5B"
+        }
+      },
+      "usage": {
+        "hero_bg": "#0A4849",
+        "section_bg_alt": "#F4F1EA",
+        "cta_primary": "#9BCF55",
+        "text_highlight": "#9BCF55"
+      }
+    },
+    "layout": {
+      "spacing": "Relaxed. Use p-8, py-20, py-32 for sections. Don't crowd content.",
+      "grid_strategy": "Use Bento grids for 'Who It's For'. Avoid symmetrical 3-column layouts where possible.",
+      "max_width": "max-w-7xl mx-auto px-4 md:px-8",
+      "radius": "rounded-2xl"
+    },
+    "motion": {
+      "reduced_motion": "Respect prefers-reduced-motion",
+      "library": "framer-motion",
+      "types": {
+        "fade_up": { "initial": { "opacity": 0, "y": 20 }, "whileInView": { "opacity": 1, "y": 0 }, "transition": { "duration": 0.6 } },
+        "stagger": { "viewport": { "once": true }, "variants": { "container": { "show": { "transition": { "staggerChildren": 0.1 } } } } }
+      }
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Use subtle grain/noise on solid backgrounds to avoid 'digital flatness'.",
+    "shadows": "Soft, diffused shadows: shadow-[0_8px_30px_rgb(0,0,0,0.04)].",
+    "borders": "1px solid borders with low opacity (#0A4849 with 10% opacity) for cards."
+  },
+  "sections_guide": {
+    "hero": {
+      "component": "HeroVideo",
+      "layout": "Full screen height (min-h-screen). Video background with dark overlay (bg-primary/80).",
+      "content": "Headline: 'Real Food. Honest Ingredients. No Shortcuts.' Subhead: 'Kochi's first 100% preservative-free meal subscription.'",
+      "actions": "Primary CTA: 'View Open Roles' (anchor to hiring), Secondary: 'Join Waitlist'.",
+      "visuals": "Marquee at bottom: 'Launching Soon • Kochi • Preservative Free • Fresh Daily'"
+    },
+    "manifesto": {
+      "component": "TextGradientScroll",
+      "background": "bg-accent (#F4F1EA)",
+      "layout": "Large typography, scroll-triggered opacity reveal. Sticky container.",
+      "content": "Focus on the 'Why': No chemicals, no frozen bases, just fresh food cooked daily."
+    },
+    "audience": {
+      "component": "BentoGrid",
+      "layout": "Asymmetric grid. Cards for: 'Busy Professionals', 'Health Enthusiasts', 'Travelers'.",
+      "style": "Clean white cards on soft green background. Icons + short text."
+    },
+    "how_it_works": {
+      "component": "StickyScroll or FeatureSteps",
+      "layout": "Left side content, right side sticky image/visual.",
+      "steps": ["Source Fresh", "Cook Daily", "Deliver Warm"],
+      "images": "Use fresh ingredient photos."
+    },
+    "hiring": {
+      "component": "JobListing",
+      "layout": "Clean list layout. Emphasis on 'Grow With Us'.",
+      "style": "Minimalist. High contrast headers. 'Apply Now' buttons link to Google Form.",
+      "visual": "Use a solid color block or abstract shape if team photos are unavailable."
+    },
+    "footer": {
+      "layout": "Large footprint. Dark theme (bg-primary).",
+      "content": "Newsletter signup, Social links, Quick links.",
+      "typography": "Big 'ZIPPLIT' watermark effect."
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "hero_fallback",
+        "url": "https://images.unsplash.com/photo-1741376509680-9517d487689f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMGhlYWx0aHklMjBpbmRpYW4lMjBmb29kJTIwZGVsaXZlcnklMjB0aWZmaW58ZW58MHx8fHwxNzcwODI5MDIxfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "South Indian fresh food spread"
+      },
+      {
+        "category": "ingredients_1",
+        "url": "https://images.unsplash.com/photo-1758738880738-8f662ac47e4f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwyfHxmcmVzaCUyMHZlZ2V0YWJsZXMlMjBpbmdyZWRpZW50c3xlbnwwfHx8fDE3NzA4MjkwMzR8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Fresh ginger garlic and peppers"
+      },
+      {
+        "category": "ingredients_2",
+        "url": "https://images.unsplash.com/photo-1769258896450-afaf01876052?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwzfHxmcmVzaCUyMHZlZ2V0YWJsZXMlMjBpbmdyZWRpZW50c3xlbnwwfHx8fDE3NzA4MjkwMzR8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Fresh carrots bundle"
+      }
+    ],
+    "icons": "Use 'lucide-react'. Icons: Leaf, Truck, ChefHat, Clock, Heart, Users, ArrowRight."
+  },
+  "instructions_to_main_agent": {
+    "file_handling": "Use the ./client directory for all frontend work. Files are .tsx.",
+    "routing": "Single page application. Use 'react-scroll' for section navigation if needed, or simple IDs.",
+    "styling": "Extend tailwind.config.ts with the brand colors. Use 'class-variance-authority' (cva) for component variants.",
+    "interactions": "Ensure hover states are visible (change opacity or subtle scale). Add 'data-testid' to all buttons and inputs.",
+    "seo": "Add proper meta tags for 'Zipplit - Preservative Free Food Delivery Kochi'."
+  },
+  "universal_guidelines": [
+    "Avoid gradients on text unless crucial for emphasis.",
+    "Buttons should be pill-shaped (rounded-full) for a friendly, organic feel.",
+    "Input fields for newsletter should have a distinct border and focus ring (Fresh Lime).",
+    "Don't center everything. Use left alignment for body text to improve readability.",
+    "Use 'Sonner' for toast notifications."
+  ]
+}
